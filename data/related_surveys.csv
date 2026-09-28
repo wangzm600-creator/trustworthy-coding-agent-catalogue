@@ -1,0 +1,161 @@
+﻿id,collection,collection_group,reference_number,citekey,title,authors,year,venue,doi,url,bibtex,system_boundary,organizing_lens,taxonomy_coverage,mechanism_coverage,evidence_coverage,main_distinction,source_url,tme
+survey-01,surveys,comparison_table,,zheng2023survey,"A survey of large language models for code: Evolution, benchmarking, and future trends","Zheng, Zibin and Ning, Kaiwen and Wang, Yanlin and Zhang, Jingwen and Zheng, Dewu and Ye, Mingxi and Chen, Jiachi",2023,arXiv preprint arXiv:2311.10372,,,"@article{zheng2023survey,
+  title={A survey of large language models for code: Evolution, benchmarking, and future trends},
+  author={Zheng, Zibin and Ning, Kaiwen and Wang, Yanlin and Zhang, Jingwen and Zheng, Dewu and Ye, Mingxi and Chen, Jiachi},
+  journal={arXiv preprint arXiv:2311.10372},
+  year={2023}
+}",Code LLMs,"Model families, task performance, and benchmarks",none,none,partial,Compares code-LLM families and benchmark performance; coding-agent trajectories and trustworthiness claims are outside its scope.,,"{'taxonomy': 'none', 'mechanisms': 'none', 'evidence': 'partial'}"
+survey-02,surveys,comparison_table,,fan2023large,Large language models for software engineering: Survey and open problems,"Fan, Angela and Gokkaya, Beliz and Harman, Mark and Lyubarskiy, Mitya and Sengupta, Shubho and Yoo, Shin and Zhang, Jie M",2023,2023 IEEE/ACM International Conference on Software Engineering: Future of Software Engineering (ICSE-FoSE),,,"@inproceedings{fan2023large,
+  title={Large language models for software engineering: Survey and open problems},
+  author={Fan, Angela and Gokkaya, Beliz and Harman, Mark and Lyubarskiy, Mitya and Sengupta, Shubho and Yoo, Shin and Zhang, Jie M},
+  booktitle={2023 IEEE/ACM International Conference on Software Engineering: Future of Software Engineering (ICSE-FoSE)},
+  pages={31--53},
+  year={2023},
+  organization={IEEE}
+}",LLMs for software engineering,"Software-engineering activities, evaluation, and open problems",none,partial,partial,Surveys LLM-based software-engineering activities and reliability-oriented hybrid techniques without a coding-agent trustworthiness taxonomy or claim-level evidence mapping.,,"{'taxonomy': 'none', 'mechanisms': 'partial', 'evidence': 'partial'}"
+survey-03,surveys,comparison_table,,lyu2025automatic,Automatic programming: Large language models and beyond,"Lyu, Michael R and Ray, Baishakhi and Roychoudhury, Abhik and Tan, Shin Hwei and Thongtanunam, Patanamon",2025,ACM Transactions on Software Engineering and Methodology,,,"@article{lyu2025automatic,
+  title={Automatic programming: Large language models and beyond},
+  author={Lyu, Michael R and Ray, Baishakhi and Roychoudhury, Abhik and Tan, Shin Hwei and Thongtanunam, Patanamon},
+  journal={ACM Transactions on Software Engineering and Methodology},
+  volume={34},
+  number={5},
+  pages={1--33},
+  year={2025},
+  publisher={ACM New York, NY}
+}",Automatic programming,"Code generation, repair, software quality, and trust",partial,partial,partial,"Examines trust and assurance for automatically generated code, including program repair and analysis, rather than lifecycle-spanning coding-agent behavior and evidence.",,"{'taxonomy': 'partial', 'mechanisms': 'partial', 'evidence': 'partial'}"
+survey-04,surveys,comparison_table,237,wang2024survey,A survey on large language model based autonomous agents,"Wang, Lei and Ma, Chen and Feng, Xueyang and Zhang, Zeyu and Yang, Hao and Zhang, Jingsen and Chen, Zhiyuan and Tang, Jiakai and Chen, Xu and Lin, Yankai and others",2024,Frontiers of Computer Science,,,"@article{wang2024survey,
+  title={A survey on large language model based autonomous agents},
+  author={Wang, Lei and Ma, Chen and Feng, Xueyang and Zhang, Zeyu and Yang, Hao and Zhang, Jingsen and Chen, Zhiyuan and Tang, Jiakai and Chen, Xu and Lin, Yankai and others},
+  journal={Frontiers of Computer Science},
+  volume={18},
+  number={6},
+  pages={186345},
+  year={2024},
+  publisher={Springer}
+}",General LLM agents,"Agent construction, applications, and evaluation",none,none,partial,Provides a general agent-construction framework and surveys evaluation strategies; trustworthiness is not an organizing axis.,,"{'taxonomy': 'none', 'mechanisms': 'none', 'evidence': 'partial'}"
+survey-05,surveys,comparison_table,254,xi2025rise,The rise and potential of large language model based agents: A survey,"Xi, Zhiheng and Chen, Wenxiang and Guo, Xin and He, Wei and Ding, Yiwen and Hong, Boyang and Zhang, Ming and Wang, Junzhe and Jin, Senjie and Zhou, Enyu and others",2025,Science China Information Sciences,,,"@article{xi2025rise,
+  title={The rise and potential of large language model based agents: A survey},
+  author={Xi, Zhiheng and Chen, Wenxiang and Guo, Xin and He, Wei and Ding, Yiwen and Hong, Boyang and Zhang, Ming and Wang, Junzhe and Jin, Senjie and Zhou, Enyu and others},
+  journal={Science China Information Sciences},
+  volume={68},
+  number={2},
+  pages={121101},
+  year={2025},
+  publisher={Springer}
+}",General LLM agents and agent societies,"Brain, perception, action, applications, and evaluation",none,none,partial,"Organizes general agents by brain, perception, action, applications, and evaluation; trustworthiness appears as an open problem rather than an analytical axis.",,"{'taxonomy': 'none', 'mechanisms': 'none', 'evidence': 'partial'}"
+survey-06,surveys,comparison_table,,liu2024large,Large language model-based agents for software engineering: A survey,"Liu, Junwei and Wang, Kaixin and Chen, Yixuan and Peng, Xin and Chen, Zhenpeng and Zhang, Lingming and Lou, Yiling",2026,ACM Transactions on Software Engineering and Methodology,10.1145/3796507,https://doi.org/10.1145/3796507,"@article{liu2024large,
+  title={Large language model-based agents for software engineering: A survey},
+  author={Liu, Junwei and Wang, Kaixin and Chen, Yixuan and Peng, Xin and Chen, Zhenpeng and Zhang, Lingming and Lou, Yiling},
+  journal={ACM Transactions on Software Engineering and Methodology},
+  year={2026},
+  doi={10.1145/3796507},
+  publisher={ACM}
+}",LLM agents for software engineering,Software-engineering activities and agent components,partial,partial,partial,Organizes software-engineering-agent studies from software-engineering and agent perspectives without separately synthesizing trustworthiness mechanisms or claim-aligned evidence.,https://doi.org/10.1145/3796507,"{'taxonomy': 'partial', 'mechanisms': 'partial', 'evidence': 'partial'}"
+survey-07,surveys,comparison_table,,he2025llm,"Llm-based multi-agent systems for software engineering: Literature review, vision, and the road ahead","He, Junda and Treude, Christoph and Lo, David",2025,ACM Transactions on Software Engineering and Methodology,,,"@article{he2025llm,
+  title={Llm-based multi-agent systems for software engineering: Literature review, vision, and the road ahead},
+  author={He, Junda and Treude, Christoph and Lo, David},
+  journal={ACM Transactions on Software Engineering and Methodology},
+  volume={34},
+  number={5},
+  pages={1--30},
+  year={2025},
+  publisher={ACM New York, NY}
+}",Multi-agent systems for software engineering,"Lifecycle applications, roles, and collaboration",partial,partial,none,Maps multi-agent software-engineering applications and collaboration across lifecycle stages without systematically analyzing benchmark evidence.,,"{'taxonomy': 'partial', 'mechanisms': 'partial', 'evidence': 'none'}"
+survey-08,surveys,comparison_table,,dong2025survey,A survey on code generation with llm-based agents,"Dong, Yihong and Jiang, Xue and Qian, Jiaru and Wang, Tian and Zhang, Kechi and Jin, Zhi and Li, Ge",2025,arXiv preprint arXiv:2508.00083,,,"@article{dong2025survey,
+  title={A survey on code generation with llm-based agents},
+  author={Dong, Yihong and Jiang, Xue and Qian, Jiaru and Wang, Tian and Zhang, Kechi and Jin, Zhi and Li, Ge},
+  journal={arXiv preprint arXiv:2508.00083},
+  year={2025}
+}",Code-generation agents,"Core techniques, lifecycle applications, benchmarks, and metrics",partial,partial,partial,"Categorizes code-agent techniques, lifecycle applications, benchmarks, and metrics without organizing them by trustworthiness property or evidential claim.",,"{'taxonomy': 'partial', 'mechanisms': 'partial', 'evidence': 'partial'}"
+survey-09,surveys,comparison_table,,wang2025ai,"Ai agentic programming: A survey of techniques, challenges, and opportunities","Wang, Huanting and Gong, Jingzhi and Zhang, Huawei and Xu, Jie and Wang, Zheng",2025,arXiv preprint arXiv:2508.11126,,,"@article{wang2025ai,
+  title={Ai agentic programming: A survey of techniques, challenges, and opportunities},
+  author={Wang, Huanting and Gong, Jingzhi and Zhang, Huawei and Xu, Jie and Wang, Zheng},
+  journal={arXiv preprint arXiv:2508.11126},
+  year={2025}
+}",LLM-based coding agents,"Agent behaviors, system architectures, core techniques, and evaluation",partial,partial,partial,"Surveys coding-agent behaviors, architectures, techniques, and evaluation without organizing them around lifecycle–property trustworthiness claims.",,"{'taxonomy': 'partial', 'mechanisms': 'partial', 'evidence': 'partial'}"
+survey-10,surveys,comparison_table,,guo2025comprehensive,A Comprehensive Survey on Benchmarks and Solutions in Software Engineering of LLM-Empowered Agentic System,"Guo, Jiale and Huang, Suizhi and Li, Mei and Huang, Dong and Chen, Xingsheng and Zhang, Regina and Guo, Zhijiang and Yu, Han and Yiu, Siu-Ming and Lio, Pietro and others",2025,arXiv preprint arXiv:2510.09721,,,"@article{guo2025comprehensive,
+  title={A Comprehensive Survey on Benchmarks and Solutions in Software Engineering of LLM-Empowered Agentic System},
+  author={Guo, Jiale and Huang, Suizhi and Li, Mei and Huang, Dong and Chen, Xingsheng and Zhang, Regina and Guo, Zhijiang and Yu, Han and Yiu, Siu-Ming and Lio, Pietro and others},
+  journal={arXiv preprint arXiv:2510.09721},
+  year={2025}
+}",LLM-empowered software engineering,"Solution paradigms, benchmarks, and workflow",none,none,partial,Connects benchmarks with solution strategies rather than coding-agent trustworthiness claims and the evidence required to support them.,,"{'taxonomy': 'none', 'mechanisms': 'none', 'evidence': 'partial'}"
+survey-11,surveys,comparison_table,,wang2026softwaredevelopmentlifecycle,Software Development Life Cycle Perspective: A Survey of Benchmarks for Code Large Language Models and Agents,Kaixin Wang and Tianlin Li and Xiaoyu Zhang and Chong Wang and Weisong Sun and Yang Liu and Aishan Liu and Xianglong Liu and Chao Shen and Bin Shi,2026,,,https://arxiv.org/abs/2505.05283,"@misc{wang2026softwaredevelopmentlifecycle,
+      title={Software Development Life Cycle Perspective: A Survey of Benchmarks for Code Large Language Models and Agents}, 
+      author={Kaixin Wang and Tianlin Li and Xiaoyu Zhang and Chong Wang and Weisong Sun and Yang Liu and Aishan Liu and Xianglong Liu and Chao Shen and Bin Shi},
+      year={2026},
+      eprint={2505.05283},
+      archivePrefix={arXiv},
+      primaryClass={cs.SE},
+      url={https://arxiv.org/abs/2505.05283}, 
+}",Code LLMs and agents,Software-lifecycle benchmark taxonomy,none,none,partial,Maps benchmark coverage across lifecycle phases without analyzing trustworthiness mechanisms or connecting benchmark design to property-specific evidential claims.,https://arxiv.org/abs/2505.05283,"{'taxonomy': 'none', 'mechanisms': 'none', 'evidence': 'partial'}"
+survey-12,surveys,comparison_table,117,khati2025mapping,Mapping the Trust Terrain: LLMs in Software Engineering-Insights and Perspectives,"Khati, Dipin and Liu, Yijin and Palacio, David N and Zhang, Yixuan and Poshyvanyk, Denys",2025,ACM Transactions on Software Engineering and Methodology,,,"@article{khati2025mapping,
+  title={Mapping the Trust Terrain: LLMs in Software Engineering-Insights and Perspectives},
+  author={Khati, Dipin and Liu, Yijin and Palacio, David N and Zhang, Yixuan and Poshyvanyk, Denys},
+  journal={ACM Transactions on Software Engineering and Methodology},
+  year={2025},
+  publisher={ACM New York, NY}
+}",LLMs in software engineering,"Trust concepts, literature synthesis, and practitioner perspectives",partial,none,none,"Examines definitions, antecedents, and metrics of human trust in LLM4SE rather than coding-agent lifecycle mechanisms or benchmark-to-claim evidence.",,"{'taxonomy': 'partial', 'mechanisms': 'none', 'evidence': 'none'}"
+survey-13,surveys,comparison_table,285,yu2025survey,A survey on trustworthy llm agents: Threats and countermeasures,"Yu, Miao and Meng, Fanci and Zhou, Xinyun and Wang, Shilong and Mao, Junyuan and Pan, Linsey and Chen, Tianlong and Wang, Kun and Li, Xinfeng and Zhang, Yongfeng and others",2025,Proceedings of the 31st ACM SIGKDD Conference on Knowledge Discovery and Data Mining V. 2,,,"@inproceedings{yu2025survey,
+  title={A survey on trustworthy llm agents: Threats and countermeasures},
+  author={Yu, Miao and Meng, Fanci and Zhou, Xinyun and Wang, Shilong and Mao, Junyuan and Pan, Linsey and Chen, Tianlong and Wang, Kun and Li, Xinfeng and Zhang, Yongfeng and others},
+  booktitle={Proceedings of the 31st ACM SIGKDD Conference on Knowledge Discovery and Data Mining V. 2},
+  pages={6216--6226},
+  year={2025}
+}",General LLM agents and multi-agent systems,"Agent modules, properties, attacks, defenses, and evaluation",partial,partial,partial,"Provides a module-oriented taxonomy of agent trustworthiness and surveys attacks, defenses, and evaluation methods without specializing the analysis to coding agents or mapping evidence to lifecycle–property claims.",,"{'taxonomy': 'partial', 'mechanisms': 'partial', 'evidence': 'partial'}"
+survey-14,surveys,comparison_table,,mohammadi2025evaluation,Evaluation and Benchmarking of LLM Agents: A Survey,"Mohammadi, Mahmoud and Li, Yipeng and Lo, Jane and Yip, Wendy",2025,Proceedings of the 31st ACM SIGKDD Conference on Knowledge Discovery and Data Mining V.2,10.1145/3711896.3736570,https://doi.org/10.1145/3711896.3736570,"@inproceedings{mohammadi2025evaluation,
+author = {Mohammadi, Mahmoud and Li, Yipeng and Lo, Jane and Yip, Wendy},
+title = {Evaluation and Benchmarking of LLM Agents: A Survey},
+year = {2025},
+isbn = {9798400714542},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3711896.3736570},
+doi = {10.1145/3711896.3736570},
+abstract = {The rise of LLM-based agents has opened new frontiers in AI applications, yet evaluating these agents remains a complex and underdeveloped area. This survey provides an in-depth overview of the emerging field of LLM agent evaluation, introducing a two-dimensional taxonomy that organizes existing work along (1) evaluation objectives-what to evaluate, such as agent behavior, capabilities, reliability, and safety-and (2) evaluation process-how to evaluate, including interaction modes, datasets and benchmarks, metric computation methods, and tooling. In addition to taxonomy, we highlight enterprise-specific challenges, such as role-based access to data, the need for reliability guarantees, dynamic and long-horizon interactions, and compliance, which are often overlooked in current research. We also identify the future research directions, including holistic, more realistic, and scalable evaluation. This work aims to bring clarity to the fragmented landscape of agent evaluation and provide a framework for systematic assessment, enabling researchers and practitioners to evaluate LLM agents for real-world deployment.},
+booktitle = {Proceedings of the 31st ACM SIGKDD Conference on Knowledge Discovery and Data Mining V.2},
+pages = {6129–6139},
+numpages = {11},
+keywords = {agent behavior, agent evaluation, benchmarks, enterprise ai, evaluation taxonomy, llm agents, safety},
+location = {Toronto ON, Canada},
+series = {KDD '25}
+}",LLM-based agents,"Evaluation objectives, procedures, and metrics",none,none,partial,Surveys agent evaluation broadly; it does not map coding-agent benchmark evidence to lifecycle–property claims.,https://doi.org/10.1145/3711896.3736570,"{'taxonomy': 'none', 'mechanisms': 'none', 'evidence': 'partial'}"
+survey-15,surveys,comparison_table,282,yehudai-etal-2026-survey,A Survey on Evaluation of {LLM}-based Agents,"Yehudai, Asaf and Eden, Lilach and Li, Alan and Uziel, Guy and Zhao, Yilun and Bar-Haim, Roy and Cohan, Arman and Shmueli-Scheuer, Michal",2026,Findings of the {A}ssociation for {C}omputational {L}inguistics: {ACL} 2026,10.18653/v1/2026.findings-acl.1330,https://aclanthology.org/2026.findings-acl.1330/,"@inproceedings{yehudai-etal-2026-survey,
+    title = ""A Survey on Evaluation of {LLM}-based Agents"",
+    author = ""Yehudai, Asaf  and
+      Eden, Lilach  and
+      Li, Alan  and
+      Uziel, Guy  and
+      Zhao, Yilun  and
+      Bar-Haim, Roy  and
+      Cohan, Arman  and
+      Shmueli-Scheuer, Michal"",
+    editor = ""Liakata, Maria  and
+      Moreira, Viviane P.  and
+      Zhang, Jiajun  and
+      Jurgens, David"",
+    booktitle = ""Findings of the {A}ssociation for {C}omputational {L}inguistics: {ACL} 2026"",
+    month = jul,
+    year = ""2026"",
+    address = ""San Diego, California, United States"",
+    publisher = ""Association for Computational Linguistics"",
+    url = ""https://aclanthology.org/2026.findings-acl.1330/"",
+    doi = ""10.18653/v1/2026.findings-acl.1330"",
+    pages = ""26690--26714"",
+    ISBN = ""979-8-89176-395-1"",
+    abstract = ""LLM-based agents represent a paradigm shift in AI, enabling autonomous systems to plan, reason, and use tools while interacting with dynamic environments. This paper provides the first comprehensive survey of evaluation methods for these increasingly capable agents. We analyze the field of agent evaluation across five perspectives: (1) Core LLM capabilities needed for agentic workflows, like planning, and tool use; (2) Application-specific benchmarks such as web and SWE agents; (3) Evaluation of generalist agents; (4) Analysis of agent benchmarks' core dimensions; and (5) Evaluation frameworks and tools for agent developers. Our analysis reveals current trends, including a shift toward more realistic, challenging evaluations with continuously updated benchmarks. We also identify critical gaps that future research must address{---}particularly in assessing cost-efficiency, safety, and robustness, and in developing fine-grained, scalable evaluation methods.""
+}",Code-generation and coding-agent benchmarks,"Benchmark tasks, datasets, and evaluation practice",none,none,partial,Organizes evaluation resources without synthesizing coding-agent trustworthiness mechanisms or a lifecycle-oriented property taxonomy.,https://aclanthology.org/2026.findings-acl.1330/,"{'taxonomy': 'none', 'mechanisms': 'none', 'evidence': 'partial'}"
+survey-16,surveys,comparison_table,98,huang2024position,Position: Trustllm: Trustworthiness in large language models,"Huang, Yue and Sun, Lichao and Wang, Haoran and Wu, Siyuan and Zhang, Qihui and Li, Yuan and Gao, Chujie and Huang, Yixin and Lyu, Wenhan and Zhang, Yixuan and others",2024,International Conference on Machine Learning,,,"@inproceedings{huang2024position,
+  title={Position: Trustllm: Trustworthiness in large language models},
+  author={Huang, Yue and Sun, Lichao and Wang, Haoran and Wu, Siyuan and Zhang, Qihui and Li, Yuan and Gao, Chujie and Huang, Yixin and Lyu, Wenhan and Zhang, Yixuan and others},
+  booktitle={International Conference on Machine Learning},
+  pages={20166--20270},
+  year={2024},
+  organization={PMLR}
+}",Large language models,Trustworthiness properties and evaluation,partial,partial,partial,Provides a general trustworthy-LLM property structure rather than a coding-agent lifecycle analysis.,,"{'taxonomy': 'partial', 'mechanisms': 'partial', 'evidence': 'partial'}"
+survey-bg-032,surveys,background_survey,,,The Evolution of Automated Software Repair,C. Le Goues et al.,2025,IEEE TSE 2025,,https://doi.org/10.1109/TSE.2025.3533309,"@misc{surveybg032,
+  title = {The Evolution of Automated Software Repair},
+  author = {C. Le Goues et al.},
+  year = {2025},
+  note = {IEEE TSE 2025},
+  url = {https://doi.org/10.1109/TSE.2025.3533309}
+}",Automated software repair,Reviews the evolution of APR from search-based repair to modern learning-based repair techniques.,not_assessed,not_assessed,not_assessed,Use as comparison background for agentic program repair; cite with care because it is broader than coding agents.,https://doi.org/10.1109/TSE.2025.3533309,"{'taxonomy': 'not_assessed', 'mechanisms': 'not_assessed', 'evidence': 'not_assessed'}"

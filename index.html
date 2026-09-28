@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Trustworthy Coding Agents — Study Catalogue</title>
+  <meta name="description" content="Search and inspect the studies, evaluation resources, and related surveys coded for our review of coding-agent trustworthiness.">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#results">Skip to results</a>
+
+  <header class="site-header">
+    <div class="title-block">
+      <p class="eyebrow">Survey data</p>
+      <h1>Trustworthy Coding Agents — Study Catalogue</h1>
+    </div>
+    <div class="header-actions" aria-label="Catalogue actions">
+      <button class="button button-secondary" id="method-button" type="button" aria-expanded="false" aria-controls="method-panel">Methods and fields</button>
+      <a class="button button-secondary" href="data/trustworthy_coding_agent_catalogue_20260928.xlsx" download>Full dataset (.xlsx)</a>
+      <a class="button button-primary is-hidden" id="repository-link" href="#">Data repository</a>
+    </div>
+  </header>
+
+  <section id="method-panel" class="method-panel is-hidden" aria-labelledby="method-button">
+    <div>
+      <h2>About the catalogue</h2>
+      <p id="method-copy">The three collections follow the survey's inclusion and coding rules. Counts and filters are generated directly from the published records.</p>
+    </div>
+    <dl id="method-details" class="method-details"></dl>
+  </section>
+
+  <nav class="collection-tabs" aria-label="Literature collections">
+    <div role="tablist" aria-label="Choose a collection">
+      <button id="tab-primary" class="collection-tab is-active" role="tab" type="button" aria-selected="true" aria-controls="catalogue-panel" tabindex="0" data-collection="primary">
+        <span>Primary studies</span><span class="tab-count" id="count-primary">—</span>
+      </button>
+      <button id="tab-screened" class="collection-tab" role="tab" type="button" aria-selected="false" aria-controls="catalogue-panel" tabindex="-1" data-collection="screened">
+        <span>Screened &amp; background</span><span class="tab-count" id="count-screened">—</span>
+      </button>
+      <button id="tab-benchmarks" class="collection-tab" role="tab" type="button" aria-selected="false" aria-controls="catalogue-panel" tabindex="-1" data-collection="benchmarks">
+        <span>Benchmarks &amp; resources</span><span class="tab-count" id="count-benchmarks">—</span>
+      </button>
+      <button id="tab-surveys" class="collection-tab" role="tab" type="button" aria-selected="false" aria-controls="catalogue-panel" tabindex="-1" data-collection="surveys">
+        <span>Related surveys</span><span class="tab-count" id="count-surveys">—</span>
+      </button>
+    </div>
+  </nav>
+
+  <main id="catalogue-panel" class="catalogue-shell" role="tabpanel" aria-labelledby="tab-primary">
+    <aside class="filter-panel" aria-label="Filter catalogue">
+      <div class="filter-panel-heading">
+        <h2>Filter records</h2>
+        <button id="clear-filters" class="text-button" type="button">Clear all</button>
+      </div>
+
+      <label class="field field-search" for="search-input">
+        <span>Search</span>
+        <input id="search-input" type="search" autocomplete="off" placeholder="Title, author, venue, keyword">
+      </label>
+
+      <div id="dynamic-filters" class="dynamic-filters"></div>
+    </aside>
+
+    <section id="results" class="results-panel" tabindex="-1">
+      <div class="results-toolbar">
+        <div>
+          <p id="result-count" class="result-count" aria-live="polite">Loading records…</p>
+          <p id="collection-note" class="collection-note"></p>
+        </div>
+        <div class="toolbar-actions">
+          <label class="sort-field" for="sort-select">
+            <span>Sort</span>
+            <select id="sort-select">
+              <option value="year-desc">Year, newest first</option>
+              <option value="year-asc">Year, oldest first</option>
+              <option value="title-asc">Title, A–Z</option>
+              <option value="venue-asc">Venue, A–Z</option>
+            </select>
+          </label>
+          <details class="download-menu">
+            <summary class="button button-secondary">Download</summary>
+            <div class="download-options">
+              <button type="button" data-download="csv">Filtered CSV</button>
+              <button type="button" data-download="json">Filtered JSON</button>
+              <button type="button" data-download="bibtex">Filtered BibTeX</button>
+            </div>
+          </details>
+        </div>
+      </div>
+
+      <div id="active-filters" class="active-filters" aria-label="Active filters"></div>
+
+      <div id="status-panel" class="status-panel">
+        <div class="loading-mark" aria-hidden="true"></div>
+        <div>
+          <h2>Loading catalogue</h2>
+          <p>Reading the published study records.</p>
+        </div>
+      </div>
+
+      <div id="table-wrap" class="table-wrap is-hidden">
+        <table>
+          <caption class="sr-only">Filtered literature records</caption>
+          <thead id="result-head"></thead>
+          <tbody id="result-body"></tbody>
+        </table>
+      </div>
+
+      <nav id="pagination" class="pagination is-hidden" aria-label="Results pages"></nav>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Use the filters to inspect the coding or download the selected records.</p>
+    <p id="footer-version"></p>
+  </footer>
+
+  <div id="drawer-backdrop" class="drawer-backdrop is-hidden" aria-hidden="true"></div>
+  <aside id="detail-drawer" class="detail-drawer" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="drawer-title">
+    <div class="drawer-heading">
+      <p id="drawer-kicker" class="eyebrow"></p>
+      <button id="drawer-close" class="icon-button" type="button" aria-label="Close details">×</button>
+    </div>
+    <div id="drawer-content" class="drawer-content"></div>
+  </aside>
+
+  <noscript>
+    <div class="noscript-note">JavaScript is required to filter and inspect this catalogue. The downloadable dataset remains available at <a href="data/catalogue.json">data/catalogue.json</a>.</div>
+  </noscript>
+
+  <script src="assets/app.js" defer></script>
+</body>
+</html>

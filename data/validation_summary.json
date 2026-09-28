@@ -1,0 +1,200 @@
+{
+  "primary_total": 188,
+  "direct_enabling": {
+    "E-VT": 54,
+    "D": 134
+  },
+  "years": {
+    "2024": 26,
+    "2025": 56,
+    "2026": 106
+  },
+  "publication_periods": {
+    "2024-03": 3,
+    "2024-06": 5,
+    "2024-09": 12,
+    "2024-12": 6,
+    "2025-03": 3,
+    "2025-06": 26,
+    "2025-09": 10,
+    "2025-12": 17,
+    "2026-03": 17,
+    "2026-06": 54,
+    "2026-09": 24,
+    "2026-12": 11
+  },
+  "lifecycle": {
+    "Verification and testing": 49,
+    "Implementation": 65,
+    "Requirement and intent": 13,
+    "Design and architecture": 6,
+    "Review and iteration": 55
+  },
+  "properties": {
+    "Truthfulness": 54,
+    "Safety": 39,
+    "Robustness": 48,
+    "Others": 37,
+    "Privacy": 4,
+    "Fairness": 6
+  },
+  "mechanisms": {
+    "VERIFY": 40,
+    "CONSTRAIN": 15,
+    "ORCH": 14,
+    "RECOVER": 36,
+    "GROUND": 15,
+    "OVERSIGHT": 5,
+    "AUDIT": 53,
+    "MONITOR": 10
+  },
+  "publication_statuses": {
+    "Peer-reviewed": 101,
+    "Preprint": 50,
+    "Accepted": 35,
+    "Peer-reviewed workshop": 2
+  },
+  "formal_or_accepted": 138,
+  "adjacent_screened": 27,
+  "related_background": 38,
+  "resources": 65,
+  "related_surveys": 17,
+  "invariants": {
+    "primary_total": {
+      "expected": 188,
+      "actual": 188,
+      "pass": true
+    },
+    "direct_enabling": {
+      "expected": {
+        "D": 134,
+        "E-VT": 54
+      },
+      "actual": {
+        "E-VT": 54,
+        "D": 134
+      },
+      "pass": true
+    },
+    "years": {
+      "expected": {
+        "2024": 26,
+        "2025": 56,
+        "2026": 106
+      },
+      "actual": {
+        "2024": 26,
+        "2025": 56,
+        "2026": 106
+      },
+      "pass": true
+    },
+    "publication_periods": {
+      "expected": {
+        "2024-03": 3,
+        "2024-06": 5,
+        "2024-09": 12,
+        "2024-12": 6,
+        "2025-03": 3,
+        "2025-06": 26,
+        "2025-09": 10,
+        "2025-12": 17,
+        "2026-03": 17,
+        "2026-06": 54,
+        "2026-09": 24,
+        "2026-12": 11
+      },
+      "actual": {
+        "2024-03": 3,
+        "2024-06": 5,
+        "2024-09": 12,
+        "2024-12": 6,
+        "2025-03": 3,
+        "2025-06": 26,
+        "2025-09": 10,
+        "2025-12": 17,
+        "2026-03": 17,
+        "2026-06": 54,
+        "2026-09": 24,
+        "2026-12": 11
+      },
+      "pass": true
+    },
+    "lifecycle": {
+      "expected": {
+        "Requirement and intent": 13,
+        "Design and architecture": 6,
+        "Implementation": 65,
+        "Verification and testing": 49,
+        "Review and iteration": 55
+      },
+      "actual": {
+        "Verification and testing": 49,
+        "Implementation": 65,
+        "Requirement and intent": 13,
+        "Design and architecture": 6,
+        "Review and iteration": 55
+      },
+      "pass": true
+    },
+    "properties": {
+      "expected": {
+        "Safety": 39,
+        "Privacy": 4,
+        "Truthfulness": 54,
+        "Fairness": 6,
+        "Robustness": 48,
+        "Others": 37
+      },
+      "actual": {
+        "Truthfulness": 54,
+        "Safety": 39,
+        "Robustness": 48,
+        "Others": 37,
+        "Privacy": 4,
+        "Fairness": 6
+      },
+      "pass": true
+    },
+    "mechanisms": {
+      "expected": {
+        "AUDIT": 53,
+        "VERIFY": 40,
+        "RECOVER": 36,
+        "CONSTRAIN": 15,
+        "GROUND": 15,
+        "ORCH": 14,
+        "MONITOR": 10,
+        "OVERSIGHT": 5
+      },
+      "actual": {
+        "VERIFY": 40,
+        "CONSTRAIN": 15,
+        "ORCH": 14,
+        "RECOVER": 36,
+        "GROUND": 15,
+        "OVERSIGHT": 5,
+        "AUDIT": 53,
+        "MONITOR": 10
+      },
+      "pass": true
+    },
+    "formal_or_accepted": {
+      "expected": 138,
+      "actual": 138,
+      "pass": true
+    },
+    "adjacent_screened": {
+      "expected": 27,
+      "actual": 27,
+      "pass": true
+    }
+  },
+  "all_invariants_pass": true,
+  "manuscript_reconciliation": {
+    "mechanism_summary": "The public records follow Table 16 in PDF version (5): VERIFY=40 and RECOVER=36. The mechanism figures in that PDF should be regenerated from this canonical record set before submission.",
+    "year_summary": "Canonical-version updates move six records from 2025 to 2026, yielding 26/56/106.",
+    "membership_summary": "SAGA is replaced by Discovering Cooperative Pipelines at Implementation × Fairness; the primary total remains 188.",
+    "quarter_note": "Canonical publication periods follow the formal proceedings month when available, a verified venue month for accepted or forthcoming papers, and otherwise the latest substantive preprint month. The resulting quarterly bins match Figure 4 in PDF version (5)."
+  }
+}

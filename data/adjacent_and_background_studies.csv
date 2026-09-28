@@ -1,0 +1,459 @@
+﻿id,collection,collection_group,index,reference_number,citekey,title,authors,first_author,year,publication_period,venue_status,venue,publication_status,status,research_type,coding_agent_scope,lifecycle_stage,primary_property,secondary_properties,specific_concern,core_agentic_mechanism,primary_mechanism_code,primary_mechanism_family,trustworthiness_contribution,evaluation_setting,metrics_evidence,relation_code,relation,source_url,url,subgroup,bibtex,relevance_note
+research-005,research,adjacent_screened,5,,,How to Support ML End-User Programmers through a Conversational Agent,E. Arteaga Garcia et al.,E. Arteaga Garcia et al.,2024,2024-06,ICSE 2024,ICSE 2024,Peer-reviewed,Peer-reviewed,Peripheral / agent-adjacent conversational programming-support study,ML end-user programming support,Review and iteration,Others,Robustness,Human oversight and collaboration,Uses a conversational agent to support programming tasks for ML end users,,,Provides evidence about how conversational agents can make programming assistance controllable for non-experts.,ML end-user programming,User support quality; task completion; interaction analysis,A,Adjacent / excluded,https://doi.org/10.1145/3597503.3608130,https://doi.org/10.1145/3597503.3608130,adjacent_screened,"@misc{research005,
+  title = {How to Support ML End-User Programmers through a Conversational Agent},
+  author = {E. Arteaga Garcia et al.},
+  year = {2024},
+  note = {ICSE 2024},
+  url = {https://doi.org/10.1145/3597503.3608130}
+}",
+research-019,research,adjacent_screened,19,,,Experiential Co-Learning of Software-Developing Agents,C. Qian et al.,C. Qian et al.,2024,2024-09,ACL 2024,ACL 2024,Accepted,Accepted,Software-developing agent learning framework,Collaborative software-development agents,Review and iteration,Robustness,Others,Multi-agent coordination stability,Instructor and assistant agents collect and reuse experiences from historical trajectories,,,Reduces repeated mistakes by transferring trajectory-derived experiences across software-development tasks.,Software-developing agent tasks,Task completion; unseen-task performance; experience-ablation analysis,A,Adjacent / excluded,https://arxiv.org/abs/2312.17025,https://arxiv.org/abs/2312.17025,adjacent_screened,"@misc{research019,
+  title = {Experiential Co-Learning of Software-Developing Agents},
+  author = {C. Qian et al.},
+  year = {2024},
+  note = {ACL 2024},
+  url = {https://arxiv.org/abs/2312.17025}
+}",
+research-023,research,adjacent_screened,23,,,HyperAgent: Generalist Software Engineering Agents to Solve Coding Tasks at Scale,M. Alshahwan et al.,M. Alshahwan et al.,2024,2024-09,arXiv preprint,arXiv preprint,Preprint,Preprint,Generalist SWE agent,Repo-level coding tasks,Implementation,Robustness,Truthfulness; Others,Tool and environment resilience,"Task planning, code search, editing, testing, and tool execution",,,Studies scalable agent execution across diverse repository tasks.,Repository-level software engineering tasks,Task success; cost; execution behavior,A,Adjacent / excluded,https://arxiv.org/abs/2409.16299,https://arxiv.org/abs/2409.16299,adjacent_screened,"@misc{research023,
+  title = {HyperAgent: Generalist Software Engineering Agents to Solve Coding Tasks at Scale},
+  author = {M. Alshahwan et al.},
+  year = {2024},
+  note = {arXiv preprint},
+  url = {https://arxiv.org/abs/2409.16299}
+}",
+research-029,research,adjacent_screened,29,272,yang2024swe,SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering,"Yang, John and Jimenez, Carlos E and Wettig, Alexander and Lieret, Kilian and Yao, Shunyu and Narasimhan, Karthik and Press, Ofir",J. Yang et al.,2024,2024-12,NeurIPS 2024,NeurIPS 2024,Peer-reviewed,Peer-reviewed,Agent interface/system,GitHub issue resolution,Implementation,Robustness,Safety; Truthfulness; Others,Tool and environment resilience,"Agent-computer interface for shell, file editing, and tests",,,"Shows that interface design shapes controllability, validation behavior, and repair success.",SWE-bench; HumanEvalFix,Issue resolution; pass@1; interface ablation,A,Adjacent / excluded,https://doi.org/10.52202/079017-1601,https://doi.org/10.52202/079017-1601,adjacent_screened,"@article{yang2024swe,
+  title={Swe-agent: Agent-computer interfaces enable automated software engineering},
+  author={Yang, John and Jimenez, Carlos E and Wettig, Alexander and Lieret, Kilian and Yao, Shunyu and Narasimhan, Karthik and Press, Ofir},
+  journal={Advances in Neural Information Processing Systems},
+  volume={37},
+  pages={50528--50652},
+  year={2024}
+}",
+research-030,research,adjacent_screened,30,,,Unity Is Strength: Collaborative LLM-Based Agents for Code Reviewer Recommendation,L. Wang et al.,L. Wang et al.,2024,2024-12,ASE 2024,ASE 2024,Peer-reviewed,Peer-reviewed,Peripheral / agent-adjacent reviewer-recommendation workflow,Code reviewer recommendation,Review and iteration,Truthfulness,Others,Reviewer-recommendation fidelity to pull-request and reviewer context,Uses collaborative LLM-based agents for reviewer recommendation,,,"Uses collaborative LLM agents to combine pull-request semantics, reviewer profiles, and multiple recommendation factors, improving recommendation accuracy and interpretability; it does not evaluate workload or demographic fairness.",Code reviewer recommendation tasks,Recommendation accuracy; ranking quality; comparison with baselines,A,Adjacent / excluded,https://doi.org/10.1145/3691620.3695291,https://doi.org/10.1145/3691620.3695291,adjacent_screened,"@misc{research030,
+  title = {Unity Is Strength: Collaborative LLM-Based Agents for Code Reviewer Recommendation},
+  author = {L. Wang et al.},
+  year = {2024},
+  note = {ASE 2024},
+  url = {https://doi.org/10.1145/3691620.3695291}
+}",
+research-035,research,adjacent_screened,35,,chen2025locagent,LocAgent: Graph-Guided LLM Agents for Code Localization,"Chen, Zhaoling and Tang, Robert and Deng, Gangda and Wu, Fang and Wu, Jialong and Jiang, Zhiwei and Prasanna, Viktor and Cohan, Arman and Wang, Xingyao",Z. Chen et al.,2025,2025-03,ACL 2025,ACL 2025,Accepted,Accepted,Code-localization agent,Repository-level code localization,Implementation,Truthfulness,Others,Diagnosis and repair correctness,Parses codebases into heterogeneous graphs and guides LLM agents through multi-hop localization,,,Improves traceability between issue descriptions and code locations through graph-grounded evidence.,Real-world code-localization and GitHub issue-resolution tasks,Localization accuracy; cost reduction; downstream issue-resolution success,A,Adjacent / excluded,https://arxiv.org/abs/2503.09089,https://arxiv.org/abs/2503.09089,adjacent_screened,"@inproceedings{chen2025locagent,
+  title={Locagent: Graph-guided llm agents for code localization},
+  author={Chen, Zhaoling and Tang, Robert and Deng, Gangda and Wu, Fang and Wu, Jialong and Jiang, Zhiwei and Prasanna, Viktor and Cohan, Arman and Wang, Xingyao},
+  booktitle={Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)},
+  pages={8697--8727},
+  year={2025}
+}",
+research-039,research,adjacent_screened,39,,,An LLM-Based Agent-Oriented Approach for Automated Code Design Issue Localization,F. Batole et al.,F. Batole et al.,2025,2025-06,ICSE 2025,ICSE 2025,Peer-reviewed,Peer-reviewed,Agent-oriented design-issue localization method,Code design issue localization,Design and architecture,Truthfulness,Others,Diagnosis and repair correctness,Uses LLM-based agents to localize code design issues,,,Improves maintainability evidence by localizing design problems through agentic analysis.,Code design issue localization tasks,Localization accuracy; comparison with baselines; diagnostic quality,A,Adjacent / excluded,https://doi.org/10.1109/ICSE55347.2025.00100,https://doi.org/10.1109/ICSE55347.2025.00100,adjacent_screened,"@misc{research039,
+  title = {An LLM-Based Agent-Oriented Approach for Automated Code Design Issue Localization},
+  author = {F. Batole et al.},
+  year = {2025},
+  note = {ICSE 2025},
+  url = {https://doi.org/10.1109/ICSE55347.2025.00100}
+}",
+research-044,research,adjacent_screened,44,,,CodingGenie: A Proactive LLM-Powered Programming Assistant,S. Zhao et al.,S. Zhao et al.,2025,2025-06,FSE 2025,FSE 2025,Peer-reviewed,Peer-reviewed,Proactive programming assistant,Interactive programming assistance,Review and iteration,Others,Robustness,Human oversight and collaboration,Proactively offers coding assistance during developer workflows,,,"Provides evidence about proactive assistance, timing, and developer-agent interaction control.",Programming-assistant workflows,User-task effectiveness; assistance quality; interaction evidence,A,Adjacent / excluded,https://doi.org/10.1145/3696630.3728603,https://doi.org/10.1145/3696630.3728603,adjacent_screened,"@misc{research044,
+  title = {CodingGenie: A Proactive LLM-Powered Programming Assistant},
+  author = {S. Zhao et al.},
+  year = {2025},
+  note = {FSE 2025},
+  url = {https://doi.org/10.1145/3696630.3728603}
+}",
+research-048,research,adjacent_screened,48,,,Diversity Empowers Intelligence: Integrating Expertise of Software Engineering Agents,K. Zhang et al.,K. Zhang et al.,2025,2025-06,ICLR 2025,ICLR 2025,Accepted,Accepted,Software-engineering agent ensemble framework,SWE agent collectives,Implementation,Robustness,Truthfulness,Behavioral consistency under uncertainty,Meta-module manages diverse SWE agents and integrates their expertise,,,Improves reliability by exploiting complementary strengths of different SWE agent frameworks.,SWE-Bench Lite,Resolve rate; committee gains; comparison with individual agents,A,Adjacent / excluded,https://arxiv.org/abs/2408.07060,https://arxiv.org/abs/2408.07060,adjacent_screened,"@misc{research048,
+  title = {Diversity Empowers Intelligence: Integrating Expertise of Software Engineering Agents},
+  author = {K. Zhang et al.},
+  year = {2025},
+  note = {ICLR 2025},
+  url = {https://arxiv.org/abs/2408.07060}
+}",
+research-053,research,adjacent_screened,53,,,Identifying Performance-Sensitive Configurations in Software Systems with LLM-Driven Agents,Z. Wang et al.,Z. Wang et al.,2025,2025-06,ICSE 2025,ICSE 2025,Peer-reviewed,Peer-reviewed,LLM-driven configuration-analysis agent,Performance-sensitive configuration identification,Design and architecture,Truthfulness,Others,Functional and semantic correctness,Uses LLM-driven agents to inspect software-system configurations,,,Extends agent trustworthiness to performance-sensitive configuration evidence in software systems.,Software configuration-analysis tasks,Identification precision/recall; performance sensitivity evidence; comparison with baselines,A,Adjacent / excluded,https://doi.org/10.1109/ICSE-Companion66252.2025.00069,https://doi.org/10.1109/ICSE-Companion66252.2025.00069,adjacent_screened,"@misc{research053,
+  title = {Identifying Performance-Sensitive Configurations in Software Systems with LLM-Driven Agents},
+  author = {Z. Wang et al.},
+  year = {2025},
+  note = {ICSE 2025},
+  url = {https://doi.org/10.1109/ICSE-Companion66252.2025.00069}
+}",
+research-055,research,adjacent_screened,55,,,Lessons Learned: A Multi-Agent Framework for Code LLMs to Learn and Improve,Y. Liu et al.,Y. Liu et al.,2025,2025-06,NeurIPS 2025,NeurIPS 2025,Accepted,Accepted,Multi-agent code-LLM improvement framework,Code optimization and code generation,Implementation,Robustness,Truthfulness,Failure recovery and self-correction,"Agents solicit, store, and reuse lessons from successes and failures",,,Improves behavioral consistency by letting code agents reuse learned failure and success evidence.,Code optimization tasks with multiple small code LLM agents,Code-generation or optimization success; comparison with larger LLMs and multi-LLM baselines,A,Adjacent / excluded,https://arxiv.org/abs/2505.23946,https://arxiv.org/abs/2505.23946,adjacent_screened,"@misc{research055,
+  title = {Lessons Learned: A Multi-Agent Framework for Code LLMs to Learn and Improve},
+  author = {Y. Liu et al.},
+  year = {2025},
+  note = {NeurIPS 2025},
+  url = {https://arxiv.org/abs/2505.23946}
+}",
+research-056,research,adjacent_screened,56,,,Mediating between Human Programmers and Integrated Development Environments using LLM-based Agents,Z. Li,Z. Li,2025,2025-06,FSE 2025,FSE 2025,Peer-reviewed,Peer-reviewed,Agent-adjacent human-IDE mediation framework,Programming assistance in IDEs,Review and iteration,Others,Truthfulness,Human oversight and collaboration,Uses LLM-based agents to mediate programmer intent and IDE operations,,,Improves controllability and traceability of human-agent-IDE interaction in programming environments.,IDE-mediated programming tasks,Interaction effectiveness; usability; task-completion evidence,A,Adjacent / excluded,https://doi.org/10.1145/3696630.3731460,https://doi.org/10.1145/3696630.3731460,adjacent_screened,"@misc{research056,
+  title = {Mediating between Human Programmers and Integrated Development Environments using LLM-based Agents},
+  author = {Z. Li},
+  year = {2025},
+  note = {FSE 2025},
+  url = {https://doi.org/10.1145/3696630.3731460}
+}",
+research-057,research,adjacent_screened,57,,,MUARF: Leveraging Multi-Agent Workflows for Automated Code Refactoring,Y. Xu et al.,Y. Xu et al.,2025,2025-06,ICSE 2025,ICSE 2025,Peer-reviewed,Peer-reviewed,Multi-agent refactoring workflow,Automated code refactoring,Design and architecture,Others,Truthfulness,Maintainability and repository integration,Coordinates multi-agent workflows for refactoring tasks,,,Improves maintainability through automated refactoring with explicit multi-agent workflow structure.,Code refactoring tasks,Refactoring correctness; maintainability impact; workflow comparison,A,Adjacent / excluded,https://doi.org/10.1109/ICSE-Companion66252.2025.00071,https://doi.org/10.1109/ICSE-Companion66252.2025.00071,adjacent_screened,"@misc{research057,
+  title = {MUARF: Leveraging Multi-Agent Workflows for Automated Code Refactoring},
+  author = {Y. Xu et al.},
+  year = {2025},
+  note = {ICSE 2025},
+  url = {https://doi.org/10.1109/ICSE-Companion66252.2025.00071}
+}",
+research-064,research,adjacent_screened,64,,,SolSearch: An LLM-Driven Framework for Efficient SAT-Solving Code Generation,J. Sheng et al.,J. Sheng et al.,2025,2025-06,ICSE 2025,ICSE 2025,Peer-reviewed,Peer-reviewed,Peripheral / agent-adjacent search-guided code-generation framework,SAT-solving code generation,Implementation,Truthfulness,368,Functional and semantic correctness,Uses LLM-driven search to generate efficient SAT-solving code,,,Uses structured search to control generation quality in a specialized coding domain.,SAT-solving code generation,Generated-code efficiency; correctness; comparison with baselines,A,Adjacent / excluded,https://doi.org/10.1109/ICSE-NIER66352.2025.00007,https://doi.org/10.1109/ICSE-NIER66352.2025.00007,adjacent_screened,"@misc{research064,
+  title = {SolSearch: An LLM-Driven Framework for Efficient SAT-Solving Code Generation},
+  author = {J. Sheng et al.},
+  year = {2025},
+  note = {ICSE 2025},
+  url = {https://doi.org/10.1109/ICSE-NIER66352.2025.00007}
+}",
+research-067,research,adjacent_screened,67,,,SWE-GPT: A Process-Centric Language Model for Automated Software Improvement,Y. Ma et al.,Y. Ma et al.,2025,2025-06,ISSTA 2025,ISSTA 2025,Peer-reviewed,Peer-reviewed,Process-centric automated software-improvement method,Automated software improvement,Implementation,Robustness,Truthfulness,Behavioral consistency under uncertainty,Models software-improvement processes rather than only final patches,,,Improves behavioral testability by making process structure central to automated improvement.,Automated software-improvement tasks,Improvement success; patch quality; process-centric ablation,A,Adjacent / excluded,https://doi.org/10.1145/3728981,https://doi.org/10.1145/3728981,adjacent_screened,"@misc{research067,
+  title = {SWE-GPT: A Process-Centric Language Model for Automated Software Improvement},
+  author = {Y. Ma et al.},
+  year = {2025},
+  note = {ISSTA 2025},
+  url = {https://doi.org/10.1145/3728981}
+}",
+research-079,research,adjacent_screened,79,,,Prompt Alchemy: Automatic Prompt Refinement for Enhancing Code Generation,S. Ye et al.,S. Ye et al.,2025,2025-09,TSE 2025,TSE 2025,Peer-reviewed,Peer-reviewed,Agent-adjacent automatic prompt-refinement method,Code generation,Requirement and intent,Robustness,Truthfulness,Behavioral consistency under uncertainty,Automatically refines prompts to improve generated-code quality,,,Reduces prompt sensitivity and improves controllability of code-generation behavior.,Code-generation tasks,Code-generation accuracy; prompt refinement effectiveness; ablation,A,Adjacent / excluded,https://doi.org/10.1109/TSE.2025.3589634,https://doi.org/10.1109/TSE.2025.3589634,adjacent_screened,"@misc{research079,
+  title = {Prompt Alchemy: Automatic Prompt Refinement for Enhancing Code Generation},
+  author = {S. Ye et al.},
+  year = {2025},
+  note = {TSE 2025},
+  url = {https://doi.org/10.1109/TSE.2025.3589634}
+}",
+research-083,research,adjacent_screened,83,,,RepoForge: Training a SOTA Fast-thinking SWE Agent with an End-to-End Data Curation Pipeline Synergizing SFT and RL at Scale,Z. Chen et al.,Z. Chen et al.,2025,2025-09,arXiv preprint,arXiv preprint,Preprint,Preprint,SWE-agent training pipeline,Training repository-level SWE agents,Implementation,Robustness,Truthfulness,Tool and environment resilience,Curates executable repository environments and combines SFT with RL,,,Connects training quality to executable environments and verifiable repository tasks.,Generated executable GitHub environments and SWE-Bench-Verified-style tasks,SWE agent resolution rate; storage reduction; training ablations,A,Adjacent / excluded,https://arxiv.org/abs/2508.01550,https://arxiv.org/abs/2508.01550,adjacent_screened,"@misc{research083,
+  title = {RepoForge: Training a SOTA Fast-thinking SWE Agent with an End-to-End Data Curation Pipeline Synergizing SFT and RL at Scale},
+  author = {Z. Chen et al.},
+  year = {2025},
+  note = {arXiv preprint},
+  url = {https://arxiv.org/abs/2508.01550}
+}",
+research-084,research,adjacent_screened,84,,,SWE-Exp: Experience-Driven Software Issue Resolution,S. Chen et al.,S. Chen et al.,2025,2025-09,arXiv preprint,arXiv preprint,Preprint,Preprint,Experience-driven SWE agent,Software issue resolution,Review and iteration,Robustness,Truthfulness,Failure recovery and self-correction,Reuses prior issue-solving experience to guide new repairs,,,Improves reliability by transferring validated repair experience.,SWE-bench style issue-resolution tasks,Resolution rate; experience-reuse gains,A,Adjacent / excluded,https://arxiv.org/abs/2507.23361,https://arxiv.org/abs/2507.23361,adjacent_screened,"@misc{research084,
+  title = {SWE-Exp: Experience-Driven Software Issue Resolution},
+  author = {S. Chen et al.},
+  year = {2025},
+  note = {arXiv preprint},
+  url = {https://arxiv.org/abs/2507.23361}
+}",
+research-086,research,adjacent_screened,86,,,"Training Long-Context, Multi-Turn Software Engineering Agents with Reinforcement Learning",A. Golubev et al.,A. Golubev et al.,2025,2025-09,arXiv preprint,arXiv preprint,Preprint,Preprint,SWE-agent reinforcement-learning method,Multi-turn software-engineering agents,Implementation,Robustness,Truthfulness,Tool and environment resilience,Applies RL to long-context multi-turn stateful SWE interactions,,,Targets reliability in long-horizon agent trajectories rather than single-turn code generation.,Stateful software-engineering tasks,Task success; trajectory quality; RL improvement over baselines,A,Adjacent / excluded,https://arxiv.org/abs/2508.03501,https://arxiv.org/abs/2508.03501,adjacent_screened,"@misc{research086,
+  title = {Training Long-Context, Multi-Turn Software Engineering Agents with Reinforcement Learning},
+  author = {A. Golubev et al.},
+  year = {2025},
+  note = {arXiv preprint},
+  url = {https://arxiv.org/abs/2508.03501}
+}",
+research-089,research,adjacent_screened,89,,,ALMAS: an Autonomous LLM-based Multi-Agent Software Engineering Framework,V. Tawosi et al.,V. Tawosi et al.,2025,2025-12,ASE 2025,ASE 2025,Peer-reviewed,Peer-reviewed,Framework / vision; weaker evidence: Autonomous multi-agent SE framework,Software-engineering automation,Implementation,Robustness,Truthfulness; Others,Multi-agent coordination stability,Coordinates autonomous LLM-based agents across software-engineering activities,,,Provides a framework-level view of how multi-agent SE workflows can be structured and audited.,Automated software-engineering workflows,Framework demonstration; task outcomes; qualitative workflow evidence,A,Adjacent / excluded,https://doi.org/10.1109/ASEW67777.2025.00059,https://doi.org/10.1109/ASEW67777.2025.00059,adjacent_screened,"@misc{research089,
+  title = {ALMAS: an Autonomous LLM-based Multi-Agent Software Engineering Framework},
+  author = {V. Tawosi et al.},
+  year = {2025},
+  note = {ASE 2025},
+  url = {https://doi.org/10.1109/ASEW67777.2025.00059}
+}",
+research-095,research,adjacent_screened,95,,,"Thinking Longer, Not Larger: Enhancing Software Engineering Agents via Scaling Test-Time Compute",Y. Ma et al.,Y. Ma et al.,2025,2025-12,ASE 2025,ASE 2025,Peer-reviewed,Peer-reviewed,Software-agent inference-time control method,Software engineering agents,Implementation,Robustness,Truthfulness,Adaptive planning and cross-task generalization,Scales test-time computation to improve agent reasoning and task completion,,,Improves robustness by controlling how much reasoning effort agents spend before acting.,Software-engineering agent tasks,Task success; cost/computation tradeoff; ablation by test-time compute,A,Adjacent / excluded,https://doi.org/10.1109/ASE63991.2025.00309,https://doi.org/10.1109/ASE63991.2025.00309,adjacent_screened,"@misc{research095,
+  title = {Thinking Longer, Not Larger: Enhancing Software Engineering Agents via Scaling Test-Time Compute},
+  author = {Y. Ma et al.},
+  year = {2025},
+  note = {ASE 2025},
+  url = {https://doi.org/10.1109/ASE63991.2025.00309}
+}",
+research-117,research,adjacent_screened,117,,pinna2026comparing,Comparing AI Coding Agents: A Task-Stratified Analysis of Pull Request Acceptance,"Pinna, Giovanni and Gong, Jingzhi and Williams, David and Sarro, Federica",G. Pinna et al.,2026,2026-03,MSR 2026,MSR 2026,Accepted,Accepted,Comparative empirical study,AI coding-agent PRs,Review and iteration,Others,368,Accountability and reviewability,Stratifies PR acceptance by task type and agent,,,Shows aggregate acceptance rates can hide task-specific reliability differences.,Agent-generated pull requests,Acceptance rate by task; agent comparison; stratified outcomes,A,Adjacent / excluded,https://arxiv.org/abs/2602.08915,https://arxiv.org/abs/2602.08915,adjacent_screened,"@article{pinna2026comparing,
+  title={Comparing ai coding agents: A task-stratified analysis of pull request acceptance},
+  author={Pinna, Giovanni and Gong, Jingzhi and Williams, David and Sarro, Federica},
+  journal={arXiv preprint arXiv:2602.08915},
+  year={2026}
+}",
+research-134,research,adjacent_screened,134,,twist2025study,A Study of Library Usage in Agent-Authored Pull Requests,"Twist, Lukas and Zhang, Jie M",L. Twist and J. M. Zhang,2026,2026-06,MSR 2026,MSR 2026,Accepted,Accepted,Agent-authored dependency study,Library and dependency usage in AI coding-agent PRs,Design and architecture,Others,Safety; Truthfulness,Maintainability and repository integration,"Analyzes imports, dependency additions, versioning practices, and library diversity in agent-authored PRs",,,Assesses whether agent contributions preserve maintainable and secure dependency practices in real repositories.,AIDev agent-authored pull requests,Import frequency; new dependency rate; version-specification rate; library diversity,A,Adjacent / excluded,https://arxiv.org/abs/2512.11589,https://arxiv.org/abs/2512.11589,adjacent_screened,"@article{twist2025study,
+  title={A Study of Library Usage in Agent-Authored Pull Requests},
+  author={Twist, Lukas and Zhang, Jie M},
+  journal={arXiv preprint arXiv:2512.11589},
+  year={2025}
+}",
+research-155,research,adjacent_screened,155,,,MARS^2: Scaling Multi-Agent Tree Search via Reinforcement Learning for Code Generation,P. Li et al.,P. Li et al.,2026,2026-06,ACL 2026,ACL 2026,Accepted,Accepted,Multi-agent code-generation search framework,Code generation,Implementation,Robustness,Truthfulness,Tool and environment resilience,Multiple agents collaborate in a shared tree-search environment with reinforcement learning,,,Improves robustness and exploration by coupling multi-agent diversity with structured search.,Code-generation benchmarks,Pass rate; multi-agent/tree-search ablations; RL training gains,A,Adjacent / excluded,https://arxiv.org/abs/2604.14564,https://arxiv.org/abs/2604.14564,adjacent_screened,"@misc{research155,
+  title = {MARS^2: Scaling Multi-Agent Tree Search via Reinforcement Learning for Code Generation},
+  author = {P. Li et al.},
+  year = {2026},
+  note = {ACL 2026},
+  url = {https://arxiv.org/abs/2604.14564}
+}",
+research-158,research,adjacent_screened,158,,,Unified Software Engineering Agent as AI Software Engineer,L. Applis et al.,L. Applis et al.,2026,2026-06,ICSE 2026,ICSE 2026,Peer-reviewed,Peer-reviewed,Unified SWE-agent architecture,Autonomous software-engineering tasks,Implementation,Robustness,Truthfulness; Others,Behavioral consistency under uncertainty,"Unifies planning, repository interaction, issue resolution, and validation in an AI software-engineer agent",,,Improves cross-task consistency by treating software-engineering tasks as a unified agent workflow.,USEbench; SWE-bench style tasks,Task success; comparisons with OpenHands; ablation evidence,A,Adjacent / excluded,https://doi.org/10.1145/3744916.3773202,https://doi.org/10.1145/3744916.3773202,adjacent_screened,"@misc{research158,
+  title = {Unified Software Engineering Agent as AI Software Engineer},
+  author = {L. Applis et al.},
+  year = {2026},
+  note = {ICSE 2026},
+  url = {https://doi.org/10.1145/3744916.3773202}
+}",
+research-183,research,adjacent_screened,183,,,Agentic Much? Adoption of Coding Agents on GitHub,R. Robbes et al.,R. Robbes et al.,2026,2026-09,TOSEM 2026,TOSEM 2026,Peer-reviewed,Peer-reviewed,Empirical adoption study,Coding-agent use on GitHub,Review and iteration,Others,368,Transparency and traceability,Studies adoption traces and coding-agent contributions in real repositories,,,Uses real GitHub evidence to ground claims about how coding agents are adopted and reviewed.,GitHub repositories and coding-agent contributions,Adoption prevalence; contribution patterns; repository-level signals,A,Adjacent / excluded,https://doi.org/10.1145/3822180,https://doi.org/10.1145/3822180,adjacent_screened,"@misc{research183,
+  title = {Agentic Much? Adoption of Coding Agents on GitHub},
+  author = {R. Robbes et al.},
+  year = {2026},
+  note = {TOSEM 2026},
+  url = {https://doi.org/10.1145/3822180}
+}",
+research-192,research,adjacent_screened,192,,,SpecAgent: A Speculative Retrieval and Forecasting Agent for Code Completion,G. Ma et al.,G. Ma et al.,2026,2026-09,ACL 2026,ACL 2026,Accepted,Accepted,Repository-level code-completion agent,Code completion in realistic repositories,Requirement and intent,Truthfulness,Robustness; Others,"Intent, specification, and context fidelity",Proactively explores repository files and constructs speculative future-edit context,,,Improves repository grounding while reducing latency and exposing future-context leakage risks.,Repository-level code-completion tasks and leakage-free benchmark,Completion quality; latency; benchmark leakage analysis,A,Adjacent / excluded,https://arxiv.org/abs/2510.17925,https://arxiv.org/abs/2510.17925,adjacent_screened,"@misc{research192,
+  title = {SpecAgent: A Speculative Retrieval and Forecasting Agent for Code Completion},
+  author = {G. Ma et al.},
+  year = {2026},
+  note = {ACL 2026},
+  url = {https://arxiv.org/abs/2510.17925}
+}",
+background-001,research,related_background,1,,,Code Repair with LLMs gives an Exploration-Exploitation Tradeoff,M. Liventsev et al.,M. Liventsev et al.,2024,,NeurIPS 2024 / arXiv,NeurIPS 2024 / arXiv,,,Related code-repair study,LLM-based code repair,,,,,,,,Analyzes the tradeoff between exploring candidate repairs and exploiting model confidence.,,,BG,Related background,https://arxiv.org/abs/2405.17503,https://arxiv.org/abs/2405.17503,related_background,"@misc{background001,
+  title = {Code Repair with LLMs gives an Exploration-Exploitation Tradeoff},
+  author = {M. Liventsev et al.},
+  year = {2024},
+  note = {NeurIPS 2024 / arXiv},
+  url = {https://arxiv.org/abs/2405.17503}
+}",Use as repair-agent background for search strategy and behavioral testability; not included in the main table because it is not framed as a coding agent.
+background-002,research,related_background,2,,,Exploring the Effectiveness of LLM based Test-driven Interactive Code Generation: User Study and Empirical Evaluation,S. Fakhoury et al.,S. Fakhoury et al.,2024,,ICSE Companion 2024,ICSE Companion 2024,,,Related empirical study,Test-driven interactive code generation,,,,,,,,Studies interactive test-driven code generation with users and empirical evaluation.,,,BG,Related background,https://doi.org/10.1145/3639478.3643525,https://doi.org/10.1145/3639478.3643525,related_background,"@misc{background002,
+  title = {Exploring the Effectiveness of LLM based Test-driven Interactive Code Generation: User Study and Empirical Evaluation},
+  author = {S. Fakhoury et al.},
+  year = {2024},
+  note = {ICSE Companion 2024},
+  url = {https://doi.org/10.1145/3639478.3643525}
+}",Use as human-in-the-loop evidence for behavioral testability; not a full coding-agent system.
+background-003,research,related_background,3,,,Imperfect Code Generation: Uncovering Weaknesses in Automatic Code Generation by Large Language Models,X. Lian et al.,X. Lian et al.,2024,,ICSE Companion 2024,ICSE Companion 2024,,,Related weakness study,Weaknesses in LLM code generation,,,,,,,,Characterizes weaknesses in automatic code generation by LLMs.,,,BG,Related background,https://doi.org/10.1145/3639478.3643081,https://doi.org/10.1145/3639478.3643081,related_background,"@misc{background003,
+  title = {Imperfect Code Generation: Uncovering Weaknesses in Automatic Code Generation by Large Language Models},
+  author = {X. Lian et al.},
+  year = {2024},
+  note = {ICSE Companion 2024},
+  url = {https://doi.org/10.1145/3639478.3643081}
+}",Use as failure-background evidence for coding-agent output risks.
+background-004,research,related_background,4,,,Lemur: Harmonizing Natural Language and Code for Language Agents,X. Xu et al.,X. Xu et al.,2024,,ICLR 2024 / arXiv,ICLR 2024 / arXiv,,,Related language-agent foundation model,Language agents using natural language and code,,,,,,,,Trains a model to better support agents that interleave natural language reasoning and code.,,,BG,Related background,https://arxiv.org/abs/2310.06830,https://arxiv.org/abs/2310.06830,related_background,"@misc{background004,
+  title = {Lemur: Harmonizing Natural Language and Code for Language Agents},
+  author = {X. Xu et al.},
+  year = {2024},
+  note = {ICLR 2024 / arXiv},
+  url = {https://arxiv.org/abs/2310.06830}
+}",Use as language-agent background for tool/code-use capability; not a coding-agent trustworthiness method by itself.
+background-005,research,related_background,5,,,One Size Does Not Fit All: Multi-granularity Patch Generation for Better Automated Program Repair,B. Lin et al.,B. Lin et al.,2024,,ISSTA 2024,ISSTA 2024,,,Related APR method,Multi-granularity patch generation,,,,,,,,Studies patch-generation granularity for automated program repair.,,,BG,Related background,https://doi.org/10.1145/3650212.3680381,https://doi.org/10.1145/3650212.3680381,related_background,"@misc{background005,
+  title = {One Size Does Not Fit All: Multi-granularity Patch Generation for Better Automated Program Repair},
+  author = {B. Lin et al.},
+  year = {2024},
+  note = {ISSTA 2024},
+  url = {https://doi.org/10.1145/3650212.3680381}
+}",Use as APR method background; not included in the main table because it is not LLM-agent-specific.
+background-006,research,related_background,6,248,wei2024selfcodealign,SelfCodeAlign: Self-Alignment for Code Generation,"Wei, Yuxiang and Cassano, Federico and Liu, Jiawei and Ding, Yifeng and Jain, Naman and Mueller, Zachary and de Vries, Harm and von Werra, Leandro and Guha, Arjun and Zhang, Lingming",H. Wei et al.,2024,,NeurIPS 2024 / arXiv,NeurIPS 2024 / arXiv,,,Related code-LLM alignment study,Code-generation alignment,,,,,,,,Studies self-alignment for improving code-generation behavior.,,,BG,Related background,https://arxiv.org/abs/2410.24198,https://arxiv.org/abs/2410.24198,related_background,"@article{wei2024selfcodealign,
+  title={Selfcodealign: Self-alignment for code generation},
+  author={Wei, Yuxiang and Cassano, Federico and Liu, Jiawei and Ding, Yifeng and Jain, Naman and Mueller, Zachary and de Vries, Harm and von Werra, Leandro and Guha, Arjun and Zhang, Lingming},
+  journal={Advances in Neural Information Processing Systems},
+  volume={37},
+  pages={62787--62874},
+  year={2024}
+}",Use as alignment background for trustworthy code generation; not an autonomous coding-agent workflow.
+background-007,research,related_background,7,,,Towards LLM-augmented multiagent systems for agile software engineering,K. Cinkusz et al.,K. Cinkusz et al.,2024,,ASE 2024,ASE 2024,,,Related vision / WIP,LLM-augmented multi-agent agile SE,,,,,,,,Discusses how LLM-augmented multi-agent systems may support agile software engineering.,,,BG,Related background,https://doi.org/10.1145/3691620.3695336,https://doi.org/10.1145/3691620.3695336,related_background,"@misc{background007,
+  title = {Towards LLM-augmented multiagent systems for agile software engineering},
+  author = {K. Cinkusz et al.},
+  year = {2024},
+  note = {ASE 2024},
+  url = {https://doi.org/10.1145/3691620.3695336}
+}",Use as comparison background for multi-agent SE; not a mature coding-agent trustworthiness study.
+background-008,research,related_background,8,,,When Large Language Models Confront Repository-Level Automatic Program Repair: How Well They Done?,Y. Chen et al.,Y. Chen et al.,2024,,ICSE Companion 2024,ICSE Companion 2024,,,Related APR evaluation study,Repository-level LLM-based APR,,,,,,,,Evaluates LLMs on repository-level automatic program repair.,,,BG,Related background,https://doi.org/10.1145/3639478.3647633,https://doi.org/10.1145/3639478.3647633,related_background,"@misc{background008,
+  title = {When Large Language Models Confront Repository-Level Automatic Program Repair: How Well They Done?},
+  author = {Y. Chen et al.},
+  year = {2024},
+  note = {ICSE Companion 2024},
+  url = {https://doi.org/10.1145/3639478.3647633}
+}",Use as comparison evidence for repair-agent claims; it evaluates LLM repair rather than an autonomous agent.
+background-009,research,related_background,9,,,An Empirical Study of Retrieval-Augmented Code Generation: Challenges and Opportunities,Z. Yang et al.,Z. Yang et al.,2025,,ACM TOSEM 2025,ACM TOSEM 2025,,,Related empirical study,Retrieval-augmented code generation,,,,,,,,Analyzes challenges and opportunities in retrieval-augmented code generation.,,,BG,Related background,https://doi.org/10.1145/3717061,https://doi.org/10.1145/3717061,related_background,"@misc{background009,
+  title = {An Empirical Study of Retrieval-Augmented Code Generation: Challenges and Opportunities},
+  author = {Z. Yang et al.},
+  year = {2025},
+  note = {ACM TOSEM 2025},
+  url = {https://doi.org/10.1145/3717061}
+}",Use as background for context retrieval and repository grounding; mark as empirical study rather than survey.
+background-010,research,related_background,10,,,Automated Repair of Ambiguous Problem Descriptions for LLM-Based Code Generation,H. Jia et al.,H. Jia et al.,2025,,ASE 2025,ASE 2025,,,Related requirement-repair study,Ambiguous problem descriptions for LLM-based code generation,,,,,,,,Repairs ambiguity in problem descriptions before code generation.,,,BG,Related background,https://doi.org/10.1109/ASE63991.2025.00038,https://doi.org/10.1109/ASE63991.2025.00038,related_background,"@misc{background010,
+  title = {Automated Repair of Ambiguous Problem Descriptions for LLM-Based Code Generation},
+  author = {H. Jia et al.},
+  year = {2025},
+  note = {ASE 2025},
+  url = {https://doi.org/10.1109/ASE63991.2025.00038}
+}",Use as background for requirement controllability; moved out of the main table because it is not an autonomous coding-agent workflow.
+background-012,research,related_background,12,,,BitsAI-CR: Automated Code Review via LLM in Practice,T. Sun et al.,T. Sun et al.,2025,,FSE 2025 Companion,FSE 2025 Companion,,,Related practice paper,Industrial automated code review,,,,,,,,Reports practical deployment evidence for LLM-based automated code review.,,,BG,Related background,https://doi.org/10.1145/3696630.3728552,https://doi.org/10.1145/3696630.3728552,related_background,"@misc{background012,
+  title = {BitsAI-CR: Automated Code Review via LLM in Practice},
+  author = {T. Sun et al.},
+  year = {2025},
+  note = {FSE 2025 Companion},
+  url = {https://doi.org/10.1145/3696630.3728552}
+}",Use as practice comparison for code-review agents; not classified as a coding-agent method.
+background-013,research,related_background,13,,,Can LLMs Replace Human Evaluators? An Empirical Study of LLM-as-a-Judge in Software Engineering,R. Wang et al.,R. Wang et al.,2025,,PACMSE / ISSTA 2025,PACMSE / ISSTA 2025,,,Related evaluator-validity study,LLM-as-a-judge in software engineering,,,,,,,,Assesses whether LLM evaluators can replace human evaluators in SE settings.,,,BG,Related background,https://doi.org/10.1145/3728963,https://doi.org/10.1145/3728963,related_background,"@misc{background013,
+  title = {Can LLMs Replace Human Evaluators? An Empirical Study of LLM-as-a-Judge in Software Engineering},
+  author = {R. Wang et al.},
+  year = {2025},
+  note = {PACMSE / ISSTA 2025},
+  url = {https://doi.org/10.1145/3728963}
+}",Use as cautionary evidence for evidential sufficiency and inference validity in agent evaluation.
+background-014,research,related_background,14,,,CodeGenLink: A Tool to Find the Likely Origin and License of Automatically Generated Code,D. Bifolco et al.,D. Bifolco et al.,2025,,ASE 2025,ASE 2025,,,Related provenance/compliance tool,Generated-code origin and license analysis,,,,,,,,Links automatically generated code to likely origin and license evidence.,,,BG,Related background,https://doi.org/10.1109/ASE63991.2025.00358,https://doi.org/10.1109/ASE63991.2025.00358,related_background,"@misc{background014,
+  title = {CodeGenLink: A Tool to Find the Likely Origin and License of Automatically Generated Code},
+  author = {D. Bifolco et al.},
+  year = {2025},
+  note = {ASE 2025},
+  url = {https://doi.org/10.1109/ASE63991.2025.00358}
+}","Use as provenance and policy-compliance background; moved out of the main table because it is a post-generation tool, not a coding agent."
+background-015,research,related_background,15,,,Comprehensive Fine-Tuning Large Language Models of Code for Automated Program Repair,K. Huang et al.,K. Huang et al.,2025,,IEEE TSE 2025,IEEE TSE 2025,,,Related APR training study,LLM-based automated program repair,,,,,,,,Studies fine-tuning code LLMs for program repair.,,,BG,Related background,https://doi.org/10.1109/TSE.2025.3532759,https://doi.org/10.1109/TSE.2025.3532759,related_background,"@misc{background015,
+  title = {Comprehensive Fine-Tuning Large Language Models of Code for Automated Program Repair},
+  author = {K. Huang et al.},
+  year = {2025},
+  note = {IEEE TSE 2025},
+  url = {https://doi.org/10.1109/TSE.2025.3532759}
+}",Use as APR background for repair agents; not included in the main table because it is model training rather than an agent.
+background-016,research,related_background,16,,,Context-Aware CodeLLM Eviction for AI-assisted Coding,K. Thangarajah et al.,K. Thangarajah et al.,2025,,ASE 2025,ASE 2025,,,Related context-management study,AI-assisted coding context management,,,,,,,,Studies context-aware eviction for CodeLLM-based coding support.,,,BG,Related background,https://doi.org/10.1109/ASE63991.2025.00271,https://doi.org/10.1109/ASE63991.2025.00271,related_background,"@misc{background016,
+  title = {Context-Aware CodeLLM Eviction for AI-assisted Coding},
+  author = {K. Thangarajah et al.},
+  year = {2025},
+  note = {ASE 2025},
+  url = {https://doi.org/10.1109/ASE63991.2025.00271}
+}",Use as background for context-window reliability in coding-agent environments.
+background-017,research,related_background,17,,,Demystifying Memorization in LLM-Based Program Repair via a General Hypothesis Testing Framework,J. Kong et al.,J. Kong et al.,2025,,PACMSE / FSE 2025,PACMSE / FSE 2025,,,Related memorization study,LLM-based program repair,,,,,,,,Analyzes memorization in program repair through hypothesis testing.,,,BG,Related background,https://doi.org/10.1145/3729390,https://doi.org/10.1145/3729390,related_background,"@misc{background017,
+  title = {Demystifying Memorization in LLM-Based Program Repair via a General Hypothesis Testing Framework},
+  author = {J. Kong et al.},
+  year = {2025},
+  note = {PACMSE / FSE 2025},
+  url = {https://doi.org/10.1145/3729390}
+}",Use as privacy and evidential-validity background for claims about repair-agent generalization.
+background-018,research,related_background,18,,,Divide-and-Conquer: Automating Code Revisions via Localization-and-Revision,S. Wang et al.,S. Wang et al.,2025,,ACM TOSEM 2025,ACM TOSEM 2025,,,Related automated revision study,Automated code revision,,,,,,,,Combines localization and revision to automate code changes.,,,BG,Related background,https://doi.org/10.1145/3697013,https://doi.org/10.1145/3697013,related_background,"@misc{background018,
+  title = {Divide-and-Conquer: Automating Code Revisions via Localization-and-Revision},
+  author = {S. Wang et al.},
+  year = {2025},
+  note = {ACM TOSEM 2025},
+  url = {https://doi.org/10.1145/3697013}
+}",Use as repair/revision background; not placed in the main table without clear LLM-agent control.
+background-019,research,related_background,19,,,EnCompass: Enhancing Agent Programming with Search Over Program Execution Paths,Y. Hu et al.,Y. Hu et al.,2025,,NeurIPS 2025 / arXiv,NeurIPS 2025 / arXiv,,,Related agent-programming framework,Agent programming and execution-path search,,,,,,,,Uses search over program execution paths to improve agent-programming reliability.,,,BG,Related background,https://arxiv.org/abs/2506.02715,https://arxiv.org/abs/2506.02715,related_background,"@misc{background019,
+  title = {EnCompass: Enhancing Agent Programming with Search Over Program Execution Paths},
+  author = {Y. Hu et al.},
+  year = {2025},
+  note = {NeurIPS 2025 / arXiv},
+  url = {https://arxiv.org/abs/2506.02715}
+}",Use as agent-programming background for execution controllability; not placed in the main coding-agent table because its scope is broader than software-engineering agents.
+background-020,research,related_background,20,,,Fine-Tuning Large Language Models to Improve Accuracy and Comprehensibility of Automated Code Review,Y. Yu et al.,Y. Yu et al.,2025,,ACM TOSEM 2024/2025,ACM TOSEM 2024/2025,,,Related automated code-review study,Automated code review,,,,,,,,Studies fine-tuning LLMs for more accurate and comprehensible automated code review.,,,BG,Related background,https://doi.org/10.1145/3695993,https://doi.org/10.1145/3695993,related_background,"@misc{background020,
+  title = {Fine-Tuning Large Language Models to Improve Accuracy and Comprehensibility of Automated Code Review},
+  author = {Y. Yu et al.},
+  year = {2025},
+  note = {ACM TOSEM 2024/2025},
+  url = {https://doi.org/10.1145/3695993}
+}",Use as background for code-review trustworthiness; not included in the main table because it is not an agentic workflow.
+background-021,research,related_background,21,,,Fixing Large Language Models' Specification Misunderstanding for Better Code Generation,Z. Tian et al.,Z. Tian et al.,2025,,ICSE 2025,ICSE 2025,,,Related specification-understanding study,Specification-driven code generation,,,,,,,,Detects and fixes LLM specification misunderstanding to improve generated code.,,,BG,Related background,https://doi.org/10.1109/ICSE55347.2025.00108,https://doi.org/10.1109/ICSE55347.2025.00108,related_background,"@misc{background021,
+  title = {Fixing Large Language Models' Specification Misunderstanding for Better Code Generation},
+  author = {Z. Tian et al.},
+  year = {2025},
+  note = {ICSE 2025},
+  url = {https://doi.org/10.1109/ICSE55347.2025.00108}
+}",Use as requirement-understanding background; moved out of the main table because it is an LLM-for-code method rather than a coding agent.
+background-022,research,related_background,22,,,Knowledge-Based Multi-Agent Framework for Automated Software Architecture Design,Y. Zhang et al.,Y. Zhang et al.,2025,,FSE 2025 Companion,FSE 2025 Companion,,,Related framework / WIP,Architecture-level multi-agent software engineering,,,,,,,,Envisions a knowledge-based multi-agent framework for automating software architecture design.,,,BG,Related background,https://doi.org/10.1145/3696630.3728493,https://doi.org/10.1145/3696630.3728493,related_background,"@misc{background022,
+  title = {Knowledge-Based Multi-Agent Framework for Automated Software Architecture Design},
+  author = {Y. Zhang et al.},
+  year = {2025},
+  note = {FSE 2025 Companion},
+  url = {https://doi.org/10.1145/3696630.3728493}
+}",Use as contrast/background for multi-agent SE beyond coding agents; not suitable for the research main table.
+background-023,research,related_background,23,,,LAURA: Enhancing Code Review Generation with Context-Enriched Retrieval-Augmented LLM,Y. Zhang et al.,Y. Zhang et al.,2025,,ASE 2025,ASE 2025,,,Related RAG code-review study,Code review generation,,,,,,,,Uses context-enriched retrieval augmentation for code-review generation.,,,BG,Related background,https://doi.org/10.1109/ASE63991.2025.00245,https://doi.org/10.1109/ASE63991.2025.00245,related_background,"@misc{background023,
+  title = {LAURA: Enhancing Code Review Generation with Context-Enriched Retrieval-Augmented LLM},
+  author = {Y. Zhang et al.},
+  year = {2025},
+  note = {ASE 2025},
+  url = {https://doi.org/10.1109/ASE63991.2025.00245}
+}",Use as background for repository context and review grounding; not included in the main table as a coding agent.
+background-024,research,related_background,24,,zhang2025llm,"LLM Hallucinations in Practical Code Generation: Phenomena, Mechanism, and Mitigation","Zhang, Ziyao and Wang, Chong and Wang, Yanlin and Shi, Ensheng and Ma, Yuchi and Zhong, Wanjun and Chen, Jiachi and Mao, Mingzhi and Zheng, Zibin",Z. Zhang et al.,2025,,PACMSE / FSE 2025,PACMSE / FSE 2025,,,Related phenomenon study,Hallucinations in practical code generation,,,,,,,,Characterizes code-generation hallucinations and discusses mitigation mechanisms.,,,BG,Related background,https://doi.org/10.1145/3728894,https://doi.org/10.1145/3728894,related_background,"@article{zhang2025llm,
+  title={Llm hallucinations in practical code generation: Phenomena, mechanism, and mitigation},
+  author={Zhang, Ziyao and Wang, Chong and Wang, Yanlin and Shi, Ensheng and Ma, Yuchi and Zhong, Wanjun and Chen, Jiachi and Mao, Mingzhi and Zheng, Zibin},
+  journal={Proceedings of the ACM on Software Engineering},
+  volume={2},
+  number={ISSTA},
+  pages={481--503},
+  year={2025},
+  publisher={ACM New York, NY, USA}
+}",Use as reliability background for correctness and hallucination mitigation; not a coding-agent-specific survey.
+background-026,research,related_background,26,,,Prompt-Based Code Completion via Multi-Retrieval Augmented Generation,H. Tan et al.,H. Tan et al.,2025,,ACM TOSEM 2025,ACM TOSEM 2025,,,Related retrieval/code-completion study,Code completion with multi-retrieval augmentation,,,,,,,,Uses multiple retrieval signals to improve prompt-based code completion.,,,BG,Related background,https://doi.org/10.1145/3725812,https://doi.org/10.1145/3725812,related_background,"@misc{background026,
+  title = {Prompt-Based Code Completion via Multi-Retrieval Augmented Generation},
+  author = {H. Tan et al.},
+  year = {2025},
+  note = {ACM TOSEM 2025},
+  url = {https://doi.org/10.1145/3725812}
+}",Use as context-management background; not a coding-agent paper because it does not center autonomous action loops.
+background-027,research,related_background,27,,,Prompt-with-Me: in-IDE Structured Prompt Management for LLM-Driven Software Engineering,Z. Li et al.,Z. Li et al.,2025,,ASE 2025,ASE 2025,,,Related prompt-management tool,IDE-based prompt management for LLM-driven SE,,,,,,,,Structures and manages prompts inside IDE workflows.,,,BG,Related background,https://doi.org/10.1109/ASE63991.2025.00276,https://doi.org/10.1109/ASE63991.2025.00276,related_background,"@misc{background027,
+  title = {Prompt-with-Me: in-IDE Structured Prompt Management for LLM-Driven Software Engineering},
+  author = {Z. Li et al.},
+  year = {2025},
+  note = {ASE 2025},
+  url = {https://doi.org/10.1109/ASE63991.2025.00276}
+}",Use as human-control and context-management background; moved out of the main table because it manages prompts rather than implementing a coding agent.
+background-028,research,related_background,28,,,Requirements Development and Formalization for Reliable Code Generation: A Multi-Agent Vision,X. Lu et al.,X. Lu et al.,2025,,ASE 2025,ASE 2025,,,Related vision paper,Requirements formalization for reliable code generation,,,,,,,,Proposes a multi-agent vision for connecting requirements development with reliable code generation.,,,BG,Related background,https://doi.org/10.1109/ASE63991.2025.00345,https://doi.org/10.1109/ASE63991.2025.00345,related_background,"@misc{background028,
+  title = {Requirements Development and Formalization for Reliable Code Generation: A Multi-Agent Vision},
+  author = {X. Lu et al.},
+  year = {2025},
+  note = {ASE 2025},
+  url = {https://doi.org/10.1109/ASE63991.2025.00345}
+}",Use as motivation for requirements-grounded agents; not yet a mature implemented benchmarked agent study.
+background-029,research,related_background,29,,,SemGuard: Real-Time Semantic Evaluator for Correcting LLM-Generated Code,Q. Wang et al.,Q. Wang et al.,2025,,ASE 2025,ASE 2025,,,Related semantic-correction study,LLM-generated code correction,,,,,,,,Uses real-time semantic evaluation to correct generated code.,,,BG,Related background,https://doi.org/10.1109/ASE63991.2025.00160,https://doi.org/10.1109/ASE63991.2025.00160,related_background,"@misc{background029,
+  title = {SemGuard: Real-Time Semantic Evaluator for Correcting LLM-Generated Code},
+  author = {Q. Wang et al.},
+  year = {2025},
+  note = {ASE 2025},
+  url = {https://doi.org/10.1109/ASE63991.2025.00160}
+}",Use as execution/evidence background; moved out of the main table because it is a correction framework rather than a coding agent.
+background-030,research,related_background,30,,,SGCR: A Specification-Grounded Framework for Trustworthy LLM Code Review,K. Wang et al.,K. Wang et al.,2025,,ASE 2025,ASE 2025,,,Related trustworthy code-review study,Specification-grounded LLM code review,,,,,,,,Grounds LLM code-review generation in explicit specifications.,,,BG,Related background,https://doi.org/10.1109/ASE63991.2025.00315,https://doi.org/10.1109/ASE63991.2025.00315,related_background,"@misc{background030,
+  title = {SGCR: A Specification-Grounded Framework for Trustworthy LLM Code Review},
+  author = {K. Wang et al.},
+  year = {2025},
+  note = {ASE 2025},
+  url = {https://doi.org/10.1109/ASE63991.2025.00315}
+}",Use as specification-grounding background; moved out of the main table because it targets LLM code review rather than an agentic coding workflow.
+background-031,research,related_background,31,,,SpecGen: Automated Generation of Formal Program Specifications via Large Language Models,L. Ma et al.,L. Ma et al.,2025,,ICSE 2025,ICSE 2025,,,Related formal-specification study,Formal program specification generation,,,,,,,,Automatically generates formal program specifications with LLMs.,,,BG,Related background,https://doi.org/10.1109/ICSE55347.2025.00129,https://doi.org/10.1109/ICSE55347.2025.00129,related_background,"@misc{background031,
+  title = {SpecGen: Automated Generation of Formal Program Specifications via Large Language Models},
+  author = {L. Ma et al.},
+  year = {2025},
+  note = {ICSE 2025},
+  url = {https://doi.org/10.1109/ICSE55347.2025.00129}
+}",Use as formal-evidence background; moved out of the main table because it is not itself an autonomous coding agent.
+background-033,research,related_background,33,,,The Impact of Prompt Programming on Function-Level Code Generation,R. Khojah et al.,R. Khojah et al.,2025,,IEEE TSE 2025,IEEE TSE 2025,,,Related prompt-sensitivity study,Function-level code generation,,,,,,,,Analyzes how prompt programming affects code-generation behavior.,,,BG,Related background,https://doi.org/10.1109/TSE.2025.3587794,https://doi.org/10.1109/TSE.2025.3587794,related_background,"@misc{background033,
+  title = {The Impact of Prompt Programming on Function-Level Code Generation},
+  author = {R. Khojah et al.},
+  year = {2025},
+  note = {IEEE TSE 2025},
+  url = {https://doi.org/10.1109/TSE.2025.3587794}
+}",Use as background for behavioral robustness and prompt sensitivity; not coding-agent-specific.
+background-034,research,related_background,34,,,The Invisible Hand: Unveiling Provider Bias in Large Language Models for Code Generation,Y. Zhang et al.,Y. Zhang et al.,2025,,ACL 2025 / arXiv,ACL 2025 / arXiv,,,Related bias/provenance study,Provider bias in code generation,,,,,,,,Studies provider-dependent behavior in LLM code generation.,,,BG,Related background,https://arxiv.org/abs/2505.20924,https://arxiv.org/abs/2505.20924,related_background,"@misc{background034,
+  title = {The Invisible Hand: Unveiling Provider Bias in Large Language Models for Code Generation},
+  author = {Y. Zhang et al.},
+  year = {2025},
+  note = {ACL 2025 / arXiv},
+  url = {https://arxiv.org/abs/2505.20924}
+}",Use as evidential-validity background when comparing coding agents built on different proprietary or open model providers.
+background-035,research,related_background,35,,,Towards Multi-Agentic AI for automated software design and modelling: challenges and opportunities,H. Dam et al.,H. Dam et al.,2025,,ASEW 2025,ASEW 2025,,,Related challenges paper,Automated software design and modelling,,,,,,,,Summarizes challenges and opportunities for multi-agentic AI in software design and modelling.,,,BG,Related background,https://doi.org/10.1109/ASEW67777.2025.00063,https://doi.org/10.1109/ASEW67777.2025.00063,related_background,"@misc{background035,
+  title = {Towards Multi-Agentic AI for automated software design and modelling: challenges and opportunities},
+  author = {H. Dam et al.},
+  year = {2025},
+  note = {ASEW 2025},
+  url = {https://doi.org/10.1109/ASEW67777.2025.00063}
+}",Use as contrast for broader agentic SE; too design/modeling-oriented for the main coding-agent table.
+background-036,research,related_background,36,,,Towards Privacy-Preserving Code Generation: Understanding and Mitigating Memorization in Code Large Language Models,M. Catal,M. Catal,2025,,FSE 2025 Companion,FSE 2025 Companion,,,Related privacy study,Privacy-preserving code generation,,,,,,,,Studies memorization risks and privacy-preserving techniques for code LLMs.,,,BG,Related background,https://doi.org/10.1145/3696630.3731473,https://doi.org/10.1145/3696630.3731473,related_background,"@misc{background036,
+  title = {Towards Privacy-Preserving Code Generation: Understanding and Mitigating Memorization in Code Large Language Models},
+  author = {M. Catal},
+  year = {2025},
+  note = {FSE 2025 Companion},
+  url = {https://doi.org/10.1145/3696630.3731473}
+}",Use as privacy/security background for trustworthy generated code; not coding-agent-specific.
+background-037,research,related_background,37,,,Towards Secure Code Generation With LLMs: A Study on Common Weakness Enumeration,J. Zhao et al.,J. Zhao et al.,2025,,IEEE TSE 2025,IEEE TSE 2025,,,Related security study,Secure code generation and CWE analysis,,,,,,,,Studies common weakness patterns in LLM-generated code and their implications for secure generation.,,,BG,Related background,https://doi.org/10.1109/TSE.2025.3619281,https://doi.org/10.1109/TSE.2025.3619281,related_background,"@misc{background037,
+  title = {Towards Secure Code Generation With LLMs: A Study on Common Weakness Enumeration},
+  author = {J. Zhao et al.},
+  year = {2025},
+  note = {IEEE TSE 2025},
+  url = {https://doi.org/10.1109/TSE.2025.3619281}
+}",Use as security background for coding-agent outputs; not a coding-agent-specific survey.
+background-038,research,related_background,38,,,Towards Trustworthy LLMs for Code: A Data-Centric Synergistic Auditing Framework,C. Wang et al.,C. Wang et al.,2025,,ICSE NIER 2025,ICSE NIER 2025,,,Related trustworthiness framework,Trustworthy LLMs for code,,,,,,,,Proposes a data-centric auditing framework for code LLM trustworthiness.,,,BG,Related background,https://doi.org/10.1109/ICSE-NIER66352.2025.00017,https://doi.org/10.1109/ICSE-NIER66352.2025.00017,related_background,"@misc{background038,
+  title = {Towards Trustworthy LLMs for Code: A Data-Centric Synergistic Auditing Framework},
+  author = {C. Wang et al.},
+  year = {2025},
+  note = {ICSE NIER 2025},
+  url = {https://doi.org/10.1109/ICSE-NIER66352.2025.00017}
+}",Use as direct trustworthiness background; not coding-agent-specific because the unit of analysis is the code LLM.
+background-039,research,related_background,39,,,CODERL+: Improving Code Generation via Reinforcement with Execution Semantics Alignment,Y. Liu et al.,Y. Liu et al.,2026,,ACL 2026 / arXiv,ACL 2026 / arXiv,,,Related RL/code-generation training study,Execution-semantics-aligned code generation,,,,,,,,Uses reinforcement learning with execution-semantics alignment to improve generated-code correctness.,,,BG,Related background,https://arxiv.org/abs/2510.02100,https://arxiv.org/abs/2510.02100,related_background,"@misc{background039,
+  title = {CODERL+: Improving Code Generation via Reinforcement with Execution Semantics Alignment},
+  author = {Y. Liu et al.},
+  year = {2026},
+  note = {ACL 2026 / arXiv},
+  url = {https://arxiv.org/abs/2510.02100}
+}",Use as training-side evidence for correctness and executable feedback; not an agentic coding workflow by itself.
+background-040,research,related_background,40,,,DeepGuard: Secure Code Generation via Multi-Layer Semantic Aggregation,X. Li et al.,X. Li et al.,2026,,ACL 2026 / arXiv,ACL 2026 / arXiv,,,Related secure code-generation study,Secure code generation,,,,,,,,Aggregates multiple semantic signals to improve security properties of generated code.,,,BG,Related background,https://arxiv.org/abs/2602.05467,https://arxiv.org/abs/2602.05467,related_background,"@misc{background040,
+  title = {DeepGuard: Secure Code Generation via Multi-Layer Semantic Aggregation},
+  author = {X. Li et al.},
+  year = {2026},
+  note = {ACL 2026 / arXiv},
+  url = {https://arxiv.org/abs/2602.05467}
+}",Use as secure-code-generation background; not included in the main table because it is not an autonomous coding-agent study.
+background-041,research,related_background,41,,,FormalScience: Scalable Human-in-the-Loop Autoformalisation of Science with Agentic Code Generation in Lean,C. Deng et al.,C. Deng et al.,2026,,ACL 2026 / arXiv,ACL 2026 / arXiv,,,Related formalization / agentic code-generation study,Lean autoformalization,,,,,,,,Combines human-in-the-loop formalization with agentic code generation in Lean.,,,BG,Related background,https://arxiv.org/abs/2602.00229,https://arxiv.org/abs/2602.00229,related_background,"@misc{background041,
+  title = {FormalScience: Scalable Human-in-the-Loop Autoformalisation of Science with Agentic Code Generation in Lean},
+  author = {C. Deng et al.},
+  year = {2026},
+  note = {ACL 2026 / arXiv},
+  url = {https://arxiv.org/abs/2602.00229}
+}",Use as adjacent evidence for formal verification and human oversight; domain is formal science rather than general coding agents.
