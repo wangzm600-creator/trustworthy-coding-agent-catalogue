@@ -48,3 +48,7 @@ The `tme` keys are `taxonomy`, `mechanisms`, and `evidence`. Coverage values are
 - Keep primary, adjacent, background, resource, and survey collections distinguishable at record level.
 - Provide `bibtex` only when a verified entry is available. BibTeX export reports omissions instead of synthesizing citations.
 - Re-run and retain the validation invariants whenever records or classifications change.
+
+## Classification audit
+
+Primary records also contain `classification_basis` with the stage/property rationale, source URLs and section locators. `classification_audit.csv` preserves before-and-after assignments. Primary totals count each retained study once; secondary tags are not added to these totals.
