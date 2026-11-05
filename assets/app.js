@@ -6,7 +6,7 @@
     primary: {
       label: "Primary studies",
       sourceKeys: ["primaryStudies", "primary", "studies", "research"],
-      note: "Studies included in the lifecycle–property analysis.",
+      note: "",
       filters: [
         { key: "year", label: "Year", param: "year", values: record => scalar(record.year) },
         { key: "lifecycle", label: "Primary lifecycle stage", param: "stage", values: record => scalar(primaryValue(record.lifecycle || record.lifecycleStage || record.lifecycle_stage)) },
@@ -29,7 +29,7 @@
     screened: {
       label: "Screened & background",
       sourceKeys: [],
-      note: "Adjacent and background records retained during screening and related-work analysis.",
+      note: "",
       filters: [
         { key: "subgroup", label: "Record group", param: "group", values: record => scalar(researchGroup(record)) },
         { key: "year", label: "Year", param: "year", values: record => scalar(record.year) },
@@ -52,7 +52,7 @@
     benchmarks: {
       label: "Benchmarks & resources",
       sourceKeys: ["benchmarks", "resources", "evaluationResources"],
-      note: "Benchmarks, datasets, and trajectory resources are listed separately from the primary research corpus.",
+      note: "",
       filters: [
         { key: "type", label: "Resource type", param: "type", values: record => scalar(record.type || record.resourceType || record.resource_type) },
         { key: "year", label: "Year", param: "year", values: record => scalar(record.year) },
@@ -75,7 +75,7 @@
     surveys: {
       label: "Related surveys",
       sourceKeys: ["surveys", "relatedSurveys"],
-      note: "T/M/E summarize coverage of taxonomy, mechanisms, and benchmark evidence: systematic, partial, not covered, or not assessed.",
+      note: "",
       filters: [
         { key: "year", label: "Year", param: "year", values: record => scalar(record.year) },
         { key: "scope", label: "Primary scope", param: "scope", values: record => scalar(record.scope || record.primaryScope || record.system_boundary) },
@@ -287,6 +287,7 @@
     const activeTab = elements.tabs.find(tab => tab.dataset.collection === collection);
     elements.panel.setAttribute("aria-labelledby", activeTab.id);
     elements.note.textContent = COLLECTIONS[collection].note;
+    elements.note.classList.add("is-hidden");
     elements.search.value = state.search;
     renderFilters();
     renderResults(options.updateUrl !== false);
@@ -375,7 +376,7 @@
     state.page = Math.min(state.page, pages);
     const start = (state.page - 1) * PAGE_SIZE;
     const pageRecords = records.slice(start, start + PAGE_SIZE);
-    const noun = { primary: "studies", screened: "records", benchmarks: "resources", surveys: "surveys" }[state.collection] || "records";
+    const noun = { primary: "STUDIES", screened: "RECORDS", benchmarks: "RESOURCES", surveys: "SURVEYS" }[state.collection] || "RECORDS";
     elements.count.textContent = records.length === total
       ? `${number(total)} ${noun}`
       : `${number(records.length)} of ${number(total)} ${noun}`;

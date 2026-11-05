@@ -3,15 +3,17 @@
     "title": "Trustworthy Coding Agents",
     "schema_version": "1.0.0",
     "search_cutoff": "2026-09-30",
-    "data_revision": "2026-10-17",
-    "primary_corpus_size": 342,
+    "data_revision": "2026-11-05",
+    "primary_corpus_size": 344,
     "description": "Studies on coding-agent trustworthiness.",
-    "method_note": "Primary studies have agent in their selected report titles. Evaluation resources and surveys are catalogued separately.",
+    "method_note": "Primary studies meet the software-task, feedback-informed adaptation, and trustworthiness criteria. Evaluation resources and surveys are catalogued separately.",
     "analysis_snapshot_frozen": true,
-    "freeze_date": "2026-10-17",
-    "publication_metadata_revision": "2026-10-17-audit",
-    "classification_revision": "2026-10-17-classification-audit",
-    "repository_url": "https://github.com/wangzm600-creator/trustworthy-coding-agent-catalogue"
+    "freeze_date": "2026-11-05",
+    "publication_metadata_revision": "2026-11-05-amendment",
+    "classification_revision": "2026-11-05-two-study-amendment",
+    "repository_url": "https://github.com/wangzm600-creator/trustworthy-coding-agent-catalogue",
+    "amendment": "Two primary studies added; one former background record promoted and one background study added.",
+    "primary_snapshot_parent": "2026-10-17-classification-audit"
   },
   "research": [
     {
@@ -12662,43 +12664,75 @@
     {
       "id": "FW004",
       "collection": "research",
-      "collection_group": "related_background",
-      "subgroup": "related_background",
+      "collection_group": "primary",
+      "subgroup": "primary",
       "index": 210,
       "reference_number": null,
       "citekey": "",
       "title": "Confidence vs. Competence: Misalignment in Judgment and Performance for Agentic Software Repair",
-      "authors": "",
-      "first_author": "",
+      "authors": "Mingyue Yuan; Jieshan Chen; Dehai Zhao; Gelareh Mohammadi; Yoshifumi Kitamura; Aaron John Quigley; Qinghua Lu; Zhenchang Xing",
+      "first_author": "Mingyue Yuan",
       "year": 2026,
       "publication_period": "2026-07-15",
-      "venue_status": "",
-      "venue": "",
+      "venue_status": "ACM Transactions on Software Engineering and Methodology",
+      "venue": "ACM Transactions on Software Engineering and Methodology",
       "publication_status": "accepted_manuscript",
       "status": "accepted_manuscript",
-      "research_type": "",
-      "coding_agent_scope": "",
-      "lifecycle_stage": "",
-      "primary_property": "",
-      "secondary_properties": [],
-      "secondary_lifecycle_stages": [],
-      "specific_concern": "",
-      "core_agentic_mechanism": "",
-      "primary_mechanism_code": "",
-      "primary_mechanism_family": "",
-      "trustworthiness_contribution": "",
-      "evaluation_setting": "",
-      "metrics_evidence": "",
-      "relation_code": "A",
-      "relation": "Adjacent / excluded",
+      "research_type": "Empirical study of repair-agent judgment and performance",
+      "coding_agent_scope": "OpenHands performs repository repair with editing, command execution, and environmental feedback.",
+      "lifecycle_stage": "Review and iteration",
+      "primary_property": "Truthfulness",
+      "secondary_properties": [
+        "Robustness"
+      ],
+      "secondary_lifecycle_stages": [
+        "Requirement and intent",
+        "Implementation"
+      ],
+      "specific_concern": "Agreement between agent self-judgments, issue information, observed behavior, and actual repair outcomes.",
+      "core_agentic_mechanism": "The evaluated repair agent adapts software changes using development feedback.",
+      "primary_mechanism_code": "AUDIT",
+      "primary_mechanism_family": "Empirical auditing and field validation",
+      "trustworthiness_contribution": "Tests whether confidence and post-execution self-judgment provide reliable evidence of repair competence.",
+      "evaluation_setting": "SWE-bench issue reports; human issue-condition judgments; controlled diagnostic-cue perturbations; OpenHands repair trajectories.",
+      "metrics_evidence": "Human–agent judgment agreement; repair outcomes; changes under information ablation; trajectory features; failure discrimination from post-execution judgments.",
+      "relation_code": "D",
+      "relation": "Direct trustworthiness",
       "source_url": "https://doi.org/10.1145/3822603",
       "url": "https://doi.org/10.1145/3822603",
       "bibtex": "",
-      "screening_decision": "not_retrieved",
-      "screening_criteria": [],
-      "sources": [],
-      "source_location": "",
-      "read_basis": "Targeted original method/evaluation audit; see linked audit for exact coverage."
+      "screening_decision": "retain",
+      "screening_criteria": [
+        "I1",
+        "I2",
+        "I3",
+        "I4",
+        "I5"
+      ],
+      "sources": [
+        "https://github.com/Mingyue-eva/AgentCognitive/blob/main/assets/TOSEM_agent_yuan26_confidence_vs_competence.pdf",
+        "https://doi.org/10.1145/3822603"
+      ],
+      "source_location": [
+        "Section 3.8 (page 16): adaptive OpenHands setting; RQ1–RQ4: judgment, perturbation, trajectory, and post-execution analysis",
+        "Archived cutoff-date record in the prior ledger; current Crossref metadata distinguishes the later version of record"
+      ],
+      "read_basis": "Targeted original-method and evaluation assessment, checked against the survey criteria.",
+      "doi": "10.1145/3822603",
+      "quarter": "2026-Q3",
+      "bibliographic_year": 2026,
+      "classification_basis": {
+        "stage": "The focal assessment compares agent judgments and execution evidence with observed repair outcomes.",
+        "property": "The central claim concerns correspondence between agent judgments and actual competence.",
+        "mechanism": "Empirical auditing of agent judgments and repair trajectories."
+      },
+      "report_date": "2026-07-15",
+      "benchmark_families": [
+        "SWE-bench"
+      ],
+      "selected_version": "Accepted manuscript available by the cutoff",
+      "accepted_date": "2026-06-15",
+      "date_basis": "Archived publisher metadata: acceptance 15 June 2026; online accepted manuscript 15 July 2026. The 4 November 2026 version of record is outside the cutoff."
     },
     {
       "id": "FW005",
@@ -60303,6 +60337,136 @@
       "sources": [],
       "source_location": "",
       "read_basis": ""
+    },
+    {
+      "id": "ADD20261105-IACGEN",
+      "collection": "research",
+      "collection_group": "primary",
+      "subgroup": "primary",
+      "index": 1185,
+      "reference_number": null,
+      "citekey": "",
+      "title": "Deployability-Centric Infrastructure-as-Code Generation: Fail, Learn, Refine, and Succeed through LLM-Empowered DevOps Simulation",
+      "authors": "Tianyi Zhang; Shidong Pan; Zejun Zhang; Zhenchang Xing; Xiaoyu Sun",
+      "first_author": "Tianyi Zhang",
+      "year": 2026,
+      "publication_period": "2026-06-30",
+      "venue_status": "Proceedings of the ACM on Software Engineering",
+      "venue": "Proceedings of the ACM on Software Engineering",
+      "publication_status": "formal_publication",
+      "status": "formal_publication",
+      "research_type": "Infrastructure-as-code framework and empirical study",
+      "coding_agent_scope": "An LLM revises CloudFormation templates using formatting, syntax, and live AWS deployment errors and prior conversation history.",
+      "lifecycle_stage": "Implementation",
+      "primary_property": "Truthfulness",
+      "secondary_properties": [
+        "Safety"
+      ],
+      "secondary_lifecycle_stages": [
+        "Verification and testing"
+      ],
+      "specific_concern": "Deployability, correspondence to user requirements, and security-policy compliance of generated infrastructure templates.",
+      "core_agentic_mechanism": "Failed validation and deployment produce diagnostic feedback for the next LLM template revision.",
+      "primary_mechanism_code": "RECOVER",
+      "primary_mechanism_family": "Feedback-driven recovery and adaptation",
+      "trustworthiness_contribution": "Evaluates user-intent coverage and Checkov policy compliance separately from deployment success.",
+      "evaluation_setting": "DPIaC-Eval: 153 scenarios across 58 AWS services; six LLMs; automated and human-guided feedback conditions.",
+      "metrics_evidence": "Deployment pass rates by iteration; resource and attribute coverage against reference templates; security-policy and template-level compliance.",
+      "relation_code": "D",
+      "relation": "Direct trustworthiness",
+      "source_url": "https://doi.org/10.1145/3797142",
+      "url": "https://doi.org/10.1145/3797142",
+      "bibtex": "",
+      "screening_decision": "retain",
+      "screening_criteria": [
+        "I1",
+        "I2",
+        "I3",
+        "I4",
+        "I5"
+      ],
+      "sources": [
+        "https://arxiv.org/html/2506.05623v3#S4",
+        "https://arxiv.org/html/2506.05623v3#S6.SS4",
+        "https://api.crossref.org/works/10.1145/3797142"
+      ],
+      "source_location": [
+        "Sections 4.1–4.3: revision loop; Section 6.4: intent and security checks",
+        "Publisher-deposited publication date: 30 June 2026"
+      ],
+      "read_basis": "Targeted original-method and evaluation assessment, checked against the survey criteria.",
+      "doi": "10.1145/3797142",
+      "quarter": "2026-Q2",
+      "bibliographic_year": 2026,
+      "classification_basis": {
+        "stage": "The intervention revises the target IaC template; deployment supplies feedback during implementation.",
+        "property": "User-intent coverage and behavioral deployability ground Truthfulness; security compliance is secondary.",
+        "mechanism": "Validation failures guide subsequent template revision."
+      },
+      "report_date": "2026-06-30",
+      "benchmark_families": [
+        "DPIaC-Eval"
+      ],
+      "title_aliases": [
+        "Deployability-Centric Infrastructure-as-Code Generation: An LLM-based Iterative Framework"
+      ]
+    },
+    {
+      "id": "ADD20261105-LINTCFG",
+      "collection": "research",
+      "collection_group": "related_background",
+      "subgroup": "related_background",
+      "index": 1186,
+      "reference_number": null,
+      "citekey": "",
+      "title": "Still Manual? Automated Linter Configuration via DSL-Based LLM Compilation of Coding Standards",
+      "authors": "Zejun Zhang; Yixin Gan; Zhenchang Xing; Tian Zhang; Yi Li; Qinghua Lu; Sherry (Xiwei) Xu; Liming Zhu",
+      "first_author": "Zejun Zhang",
+      "year": 2026,
+      "publication_period": "2026-06-30",
+      "venue_status": "Proceedings of the ACM on Software Engineering",
+      "venue": "Proceedings of the ACM on Software Engineering",
+      "publication_status": "formal_publication",
+      "status": "formal_publication",
+      "research_type": "Linter-configuration generation",
+      "coding_agent_scope": "A DSL-based compilation pipeline maps natural-language standards to linter configurations.",
+      "lifecycle_stage": "",
+      "primary_property": "",
+      "secondary_properties": [],
+      "secondary_lifecycle_stages": [],
+      "specific_concern": "Preserving coding-standard meaning in generated linter configurations.",
+      "core_agentic_mechanism": "The reported alignment check filters or accepts mappings before generation; no development-feedback revision loop is established.",
+      "primary_mechanism_code": "",
+      "primary_mechanism_family": "",
+      "trustworthiness_contribution": "Related background on translating coding standards into tool-enforceable configurations.",
+      "evaluation_setting": "Java/Checkstyle and JavaScript/ESLint coding-standard configuration; developer study.",
+      "metrics_evidence": "DSL representation and configuration precision, recall, accuracy, and developer configuration effort.",
+      "relation_code": "A",
+      "relation": "Related background",
+      "source_url": "https://doi.org/10.1145/3797064",
+      "url": "https://doi.org/10.1145/3797064",
+      "bibtex": "",
+      "screening_decision": "background",
+      "screening_criteria": [
+        "I2",
+        "E1"
+      ],
+      "sources": [
+        "https://arxiv.org/html/2602.07783v1#S3.SS3.SSS4",
+        "https://api.crossref.org/works/10.1145/3797064"
+      ],
+      "source_location": [
+        "Sections 3.3.4–3.3.5: alignment checking and configuration generation; Section 4: evaluation"
+      ],
+      "read_basis": "Targeted original-method and evaluation assessment, checked against the survey criteria.",
+      "doi": "10.1145/3797064",
+      "quarter": "2026-Q2",
+      "bibliographic_year": 2026,
+      "classification_basis": {
+        "eligibility": "The method does not establish feedback-informed LLM revision during task execution (I2/E1). No primary stage, property, or counted mechanism is assigned."
+      },
+      "report_date": "2026-06-30",
+      "background_mechanism": "Context and specification grounding"
     }
   ],
   "resources": [
@@ -63864,29 +64028,31 @@
   },
   "validation": {
     "all_invariants_pass": true,
-    "primary_studies": 342,
+    "primary_studies": 344,
     "bounded_643_reassessment_complete": true,
     "complete_search_frozen": false,
     "author_review_complete": false,
-    "title_restricted_corpus_complete": true,
     "cohort_reassessment_complete": true,
     "analysis_snapshot_frozen": true,
-    "primary_snapshot_count": 342,
-    "classification_audit_records": 342,
+    "primary_snapshot_count": 344,
+    "classification_audit_records": 344,
     "primary_stage_totals": {
-      "Requirement and intent": 6,
-      "Design and architecture": 4,
-      "Implementation": 168,
+      "Implementation": 169,
       "Verification and testing": 98,
-      "Review and iteration": 66
+      "Requirement and intent": 6,
+      "Review and iteration": 67,
+      "Design and architecture": 4
     },
     "primary_property_totals": {
+      "Robustness": 79,
+      "Truthfulness": 166,
+      "Others": 29,
       "Safety": 65,
       "Privacy": 3,
-      "Truthfulness": 164,
-      "Fairness": 2,
-      "Robustness": 79,
-      "Others": 29
-    }
+      "Fairness": 2
+    },
+    "primary_count": 344,
+    "amendment_review_records": 3,
+    "validation_scope": "Count reconciliation and three-record amendment; original primary assignments retained."
   }
 }

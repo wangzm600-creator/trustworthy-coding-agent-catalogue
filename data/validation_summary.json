@@ -1,87 +1,26 @@
 {
-  "counts": {
-    "primary_records": 342,
-    "unique_primary_ids": 342,
-    "changed_studies": 59,
-    "stage_changes": 48,
-    "property_changes": 17,
-    "both_changed": 6,
-    "row_and_column_totals_reconcile": true,
-    "all_original_anchor_spans_nonoverlapping": true,
-    "all_representatives_in_their_primary_cells": true,
-    "all_R_markers_in_reference_map": true,
-    "metadata_unchanged_from_latest_metadata_audit": true,
-    "N_unchanged": true,
-    "website_primary_records": 342,
-    "website_resources": 117,
-    "website_surveys": 32,
-    "fresh_targeted_original_sections": 216,
-    "archived_specific_evidence_reassessments": 126,
-    "manuscript_modified": false,
-    "bib_modified": false,
-    "github_pushed": false,
-    "human_author_review_claimed_complete": false,
-    "original_replacement_instructions": 80,
-    "all_original_anchors_unique": true
-  },
-  "stage": {
-    "Requirement and intent": 6,
-    "Design and architecture": 4,
-    "Implementation": 168,
+  "N": 344,
+  "background": 842,
+  "resources": 117,
+  "surveys": 32,
+  "primary_stage_totals": {
+    "Implementation": 169,
     "Verification and testing": 98,
-    "Review and iteration": 66
+    "Requirement and intent": 6,
+    "Review and iteration": 67,
+    "Design and architecture": 4
   },
-  "property": {
+  "primary_property_totals": {
+    "Robustness": 79,
+    "Truthfulness": 166,
+    "Others": 29,
     "Safety": 65,
     "Privacy": 3,
-    "Truthfulness": 164,
-    "Fairness": 2,
-    "Robustness": 79,
-    "Others": 29
+    "Fairness": 2
   },
-  "matrix": {
-    "Requirement and intent": {
-      "Safety": 2,
-      "Privacy": 0,
-      "Truthfulness": 2,
-      "Fairness": 0,
-      "Robustness": 1,
-      "Others": 1
-    },
-    "Design and architecture": {
-      "Safety": 1,
-      "Privacy": 0,
-      "Truthfulness": 3,
-      "Fairness": 0,
-      "Robustness": 0,
-      "Others": 0
-    },
-    "Implementation": {
-      "Safety": 33,
-      "Privacy": 1,
-      "Truthfulness": 78,
-      "Fairness": 1,
-      "Robustness": 54,
-      "Others": 1
-    },
-    "Verification and testing": {
-      "Safety": 17,
-      "Privacy": 1,
-      "Truthfulness": 63,
-      "Fairness": 0,
-      "Robustness": 15,
-      "Others": 2
-    },
-    "Review and iteration": {
-      "Safety": 12,
-      "Privacy": 1,
-      "Truthfulness": 18,
-      "Fairness": 1,
-      "Robustness": 9,
-      "Others": 25
-    }
-  },
-  "search_cutoff": "2026-09-30",
-  "publication_metadata_revision": "2026-10-17-audit",
-  "classification_revision": "2026-10-17-classification-audit"
+  "old_342_primary_records_unchanged": true,
+  "unique_research_ids": true,
+  "all_count_totals_reconcile": true,
+  "cutoff": "2026-09-30",
+  "amendment_date": "2026-11-05"
 }
