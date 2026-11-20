@@ -11,7 +11,7 @@
         { key: "year", label: "Year", param: "year", values: record => scalar(record.year) },
         { key: "lifecycle", label: "Primary lifecycle stage", param: "stage", values: record => scalar(primaryValue(record.lifecycle || record.lifecycleStage || record.lifecycle_stage)) },
         { key: "property", label: "Primary property", param: "property", values: record => scalar(primaryValue(record.properties || record.property || record.primary_property)) },
-        { key: "relation", label: "Trustworthiness relation", param: "relation", values: record => scalar(record.relation || record.trustworthinessRelation) },
+        { key: "relation", label: "Trustworthiness relation", param: "relation", values: record => scalar(relationLabel(record)) },
         { key: "mechanisms", label: "Mechanism", param: "mechanism", values: record => list(record.mechanisms || record.mechanism || record.primary_mechanism_family) },
         { key: "status", label: "Publication status", param: "status", values: record => scalar(record.status || record.publicationStatus || record.publication_status) },
         { key: "venue", label: "Venue", param: "venue", values: record => scalar(record.venue) }
@@ -35,7 +35,7 @@
         { key: "year", label: "Year", param: "year", values: record => scalar(record.year) },
         { key: "lifecycle", label: "Lifecycle stage", param: "stage", values: record => scalar(primaryValue(record.lifecycle || record.lifecycleStage || record.lifecycle_stage)) },
         { key: "property", label: "Trustworthiness property", param: "property", values: record => scalar(primaryValue(record.properties || record.property || record.primary_property)) },
-        { key: "relation", label: "Relation", param: "relation", values: record => scalar(record.relation || record.trustworthinessRelation) },
+        { key: "relation", label: "Relation", param: "relation", values: record => scalar(relationLabel(record)) },
         { key: "status", label: "Publication status", param: "status", values: record => scalar(record.status || record.publicationStatus || record.publication_status) },
         { key: "venue", label: "Venue", param: "venue", values: record => scalar(record.venue) }
       ],
@@ -416,6 +416,7 @@
       parts.push(String(value));
     };
     collect(record);
+    collect(relationLabel(record));
     return normalizeText(parts.join(" "));
   }
 
@@ -518,7 +519,7 @@
       if (record.trustworthiness_role) return clampedText(record.trustworthiness_role);
       return tagSet(list(record.properties || record.trustworthinessProperties), true);
     }
-    if (key === "relation") return tagSet(scalar(record.relation || record.trustworthinessRelation), true);
+    if (key === "relation") return tagSet(scalar(relationLabel(record)), true);
     if (key === "mechanism") return tagSet(list(record.mechanisms || record.mechanism || record.primary_mechanism_family));
     if (key === "type") return textNode(record.type || record.resourceType || record.resource_type || "—");
     if (key === "taskLevel") return textNode(record.taskLevel || record.task_level || record.supported_task || record.scope || "—");
@@ -699,7 +700,7 @@
   function detailEntries(record) {
     if (["primary", "screened"].includes(state.collection)) return [
       ["Record group", researchGroup(record)],
-      ["Trustworthiness relation", record.relation || record.trustworthinessRelation],
+      ["Trustworthiness relation", relationLabel(record)],
       ["Task", record.task || record.seTask || record.coding_agent_scope],
       ["Primary lifecycle stage", primaryValue(record.lifecycle || record.lifecycleStage || record.lifecycle_stage)],
       ["Secondary lifecycle stages", record.secondary_lifecycle_stages || record.secondaryStages || secondaryValue(record.lifecycle || record.lifecycleStages)],
@@ -777,7 +778,7 @@
     ];
     if (["primary", "screened"].includes(state.collection)) return [...common,
       { label: "Record group", value: record => researchGroup(record) },
-      { label: "Trustworthiness relation", value: record => record.relation || record.trustworthinessRelation },
+      { label: "Trustworthiness relation", value: record => relationLabel(record) },
       { label: "Task", value: record => record.task || record.seTask || record.coding_agent_scope },
       { label: "Primary lifecycle stage", value: record => primaryValue(record.lifecycle || record.lifecycleStage || record.lifecycle_stage) },
       { label: "Secondary lifecycle stages", value: record => record.secondary_lifecycle_stages || record.secondaryStages || secondaryValue(record.lifecycle || record.lifecycleStages) },
@@ -831,7 +832,9 @@
     const config = COLLECTIONS[state.collection];
     config.filters.forEach(filter => {
       const values = params.getAll(filter.param).flatMap(value => value.split("|")).filter(Boolean);
-      if (values.length) state.filters[filter.key] = new Set(values);
+      if (values.length) state.filters[filter.key] = new Set(filter.key === "relation"
+        ? values.map(value => relationLabel({ relation: value }))
+        : values);
     });
     elements.search.value = state.search;
     elements.sort.value = state.sort;
@@ -884,6 +887,12 @@
 
   function currentConfig() { return COLLECTIONS[state.collection]; }
   function currentRecords() { return state.data[state.collection] || []; }
+
+  // Group labels are presentation-only; source screening decisions remain intact.
+  function relationLabel(record) {
+    const value = record.relation || record.trustworthinessRelation || "";
+    return value === "Title-excluded background" ? "Adjacent / excluded" : value;
+  }
 
   function scalar(value) {
     if (value === null || value === undefined || value === "") return [];
