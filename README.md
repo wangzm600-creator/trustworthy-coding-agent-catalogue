@@ -1,40 +1,25 @@
-# Trustworthy Coding Agents
+# Trustworthiness of Coding Agents
 
-[Browse the study catalogue](https://wangzm600-creator.github.io/trustworthy-coding-agent-catalogue/)
+### A Software Development Lifecycle-Oriented Survey
 
-## About the survey
+[Study catalogue](https://wangzm600-creator.github.io/trustworthy-coding-agent-catalogue/) · [Data](data/) · [Contact](mailto:wangzm600@gmail.com)
 
-This repository accompanies our survey of the trustworthiness of LLM-based coding agents, covering both their development actions and the software they produce.
+This repository contains the literature catalogue and analytical data for our survey of LLM-based coding-agent trustworthiness.
 
-The survey organizes studies by software-development activity and trustworthiness property. This lifecycle perspective helps identify where concerns arise, which mechanisms address them, and what evidence supports the reported conclusions. We also examine benchmark tasks, observations, judgment criteria, and metrics to clarify which trustworthiness claims their results can support. The findings inform research directions for evaluation, execution control, privacy and fairness, and post-deployment accountability.
+We examine both agent behavior and resulting software across five development activities and six trustworthiness-property categories. The survey compares the mechanisms used to address these concerns and examines which claims current benchmark results can support. This lifecycle perspective identifies where research is concentrated and where evidence remains limited.
 
-The catalogue provides searchable study records, filters for lifecycle stages and trustworthiness properties, bibliographic information, and downloadable data.
+| Primary studies | Adjacent & background | Evaluation resources | Related surveys |
+| ---: | ---: | ---: | ---: |
+| **344** | **842** | **117** | **32** |
 
-## Collections
+**Search cutoff:** 30 September 2026  
+**Contact:** [wangzm600@gmail.com](mailto:wangzm600@gmail.com)
 
-- **344 primary studies**
-- **842 adjacent and background records**
-- **117 benchmarks and evaluation resources**
-- **32 related surveys**
+Browse the catalogue to filter studies by lifecycle stage, trustworthiness property, mechanism, publication year, and venue. Data and bibliographic records are available in [`data/`](data/).
 
-Adjacent and background records, evaluation resources, and surveys are maintained separately from the primary-study analysis.
+<details>
+<summary>Local preview</summary>
 
-## Search cutoff and data
+Run `python -m http.server 8000` from the repository root, then open [http://localhost:8000/](http://localhost:8000/).
 
-The eligibility cutoff is **30 September 2026**, based on report availability or publicly verifiable acceptance. This cutoff is distinct from later metadata corrections and catalogue updates.
-
-The website reads `data/catalogue.json`. The `data/` directory also contains collection CSVs, a spreadsheet, and classification records. Older date-stamped files represent earlier snapshots.
-
-## Contact
-
-For questions, corrections, or suggestions, contact [wangzm600@gmail.com](mailto:wangzm600@gmail.com).
-
-## Local preview
-
-From the repository root, run:
-
-```sh
-python -m http.server 8000
-```
-
-Then open [http://localhost:8000/](http://localhost:8000/). The site consists of static files and requires no build step.
+</details>
